@@ -1,6 +1,12 @@
 {
     "name": "linotype/starter",
     "type": "linotype",
+    "description": "linotype starter project",
+    "keywords": [
+        "linotype"
+    ],
+    "homepage": "https://linotype.dev",
+    "license": "MIT",
     "require": {
         "composer/installers": "~1.0",
         "oomphinc/composer-installers-extender": "^2.0"
