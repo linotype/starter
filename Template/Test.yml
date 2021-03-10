@@ -1,0 +1,96 @@
+template:
+
+  version: 1.0
+  package: ynk
+
+  name: Test
+  desc: Test page
+
+  type: single
+  
+  layout:
+    
+    title:
+      block: Title
+      override:
+        text: 
+          value: Titre simple
+        font_size:
+          value: 4rem
+          css: true
+        color:
+          default: red
+          css: true
+
+    # menu:
+    #   block: Menu
+          
+    test2:
+      block: Container
+      childrens:
+        0:
+          block: Title
+          override:
+            text: 
+              value: Block 1
+        1:
+          block: Container
+          childrens:
+            0:
+              block: Menu
+            1:
+              block: Title
+              override: 
+                text: 
+                  value: Block 2a
+            2:
+              block: Container
+              childrens:
+                0:
+                  block: Title
+                  override:
+                    text: 
+                      value: Block 1b
+                1:
+                  block: Container
+                  childrens:
+                    0:
+                      block: Title
+                      override:
+                        text: 
+                          value: Block 1c
+                    1:
+                      block: Title
+                      override: 
+                        text: 
+                          value: Block 1c
+                2:
+                  block: Title
+                  override:
+                    text: 
+                      value: Block 2b
+
+        2:
+          block: Title
+          override:
+            text: 
+              value: Block 2
+
+    # test1:
+    #   block: RenderBlocks
+    #   override:
+    #     blocks:
+    #       value: 
+    #         sub_content_1:
+    #           block: Title
+    #           context:
+    #             title:
+    #               title: Cool
+    #         sub_content_2:
+    #           block: Title
+    #           context:
+    #             title:
+    #               title: Cool
+
+    # footer:
+    #   module: Footer

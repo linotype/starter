@@ -1,0 +1,19 @@
+field:
+
+  version: 1.0
+  package: ynk
+  
+  name: Editor
+  desc: Edit text with EditorJS
+
+  packages:
+    "@editorjs/editorjs": "latest"
+
+  title: Editor
+  info: Your text
+
+  option:
+  
+  format:
+    type: long_text
+    helper: Composer.getFields #TODO: use heler to format field on get value

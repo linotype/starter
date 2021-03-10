@@ -1,0 +1,84 @@
+.field--composer {
+  display: relative;
+
+  
+  .composer-items-add{
+    padding: 2rem;
+    background: #5b646b;
+    .composer-item-add {
+      display: inline-block;
+      background-color: #e6e6e6;
+      color: #333;
+      padding: .3rem .6rem;
+      margin: .3rem;
+      cursor: pointer;
+      &:hover{
+        background-color: #fff;
+        color: #333;
+      }
+    }
+    
+  }
+
+}
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  // opacity: 0.8;
+  // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  // filter: alpha(opacity=80);
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+
+.composer-item {
+  background: #33383c;
+  margin-bottom: .2rem;
+  .composer-item-toolbar {
+    position: relative;
+    background: #3e454a;
+    padding: .5rem;
+    .composer-item-title{
+      margin: 0 1.8rem;
+    color: #fff;
+      }
+    .composer-item-delete{
+      position:absolute;
+      right:0;
+      top:0;
+      padding: .5rem;
+      color:red;
+      cursor:pointer;
+      }
+      .composer-item-drag{
+        position: absolute;
+    left: 0;
+    top: 0;
+    padding: .5rem;
+    width: 1.3rem;
+    opacity: .5;
+        }
+    
+  }
+
+  .composer-item-edit {
+    padding: 2rem;
+  }
+}

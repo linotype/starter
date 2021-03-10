@@ -1,0 +1,22 @@
+block:
+
+  version: 1.2
+  package: ynk
+  
+  name: Composer
+  desc: Render of composed blocks
+  
+  parent: all
+  accept: all
+
+  context: 
+
+    content:
+      title: Compose
+      desc: Create content with blocks
+      field: Composer
+      save: meta
+      option:
+      value: ''
+      default: 
+      preview: 

@@ -1,0 +1,27 @@
+template:
+
+  version: 1.0
+  package: ynk
+
+  name: About
+  desc: Your presentation
+
+  type: single
+  
+  layout:
+
+    header:
+      module: Header
+
+    title:
+      block: Title
+
+    presentation:
+      block: Content
+      override:
+        content:
+          title: Texte de présentation
+          default: Hello i'm a guy with no name
+
+    footer:
+      module: Footer

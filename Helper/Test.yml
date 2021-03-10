@@ -1,0 +1,10 @@
+helper:
+
+  version: 1.0
+  package: ynk
+  
+  name: Test
+  desc: Get test data
+  
+  controller: App\Linotype\Service\Test\Test
+  tags: ['controller.service_arguments']

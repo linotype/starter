@@ -1,0 +1,19 @@
+.field--color {
+  display: relative;
+
+  .field {
+    position: relative;
+
+    > .pickr {
+      position: absolute;
+      left: 2px;
+      top: 1px;
+
+    }
+
+    > input {
+      padding-left: 35px !important;
+    }
+
+  }
+}

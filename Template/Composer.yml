@@ -1,0 +1,20 @@
+template:
+
+  version: 1.0
+  package: ynk
+
+  name: Composer
+  desc: Test page for composer
+
+  type: single
+  
+  layout:
+
+    # header:
+    #   module: Header
+
+    content:
+      block: Composer
+
+    footer:
+      module: Footer

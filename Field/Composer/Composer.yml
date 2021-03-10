@@ -1,0 +1,35 @@
+field:
+
+  version: 1.0
+  package: ynk
+  
+  name: Composer
+  desc: Compose blocks from the backend
+
+  packages:
+    "dragula": "latest"
+
+  title: Compose
+  info: Create content with blocks
+
+  option:
+    blocks: 
+      - Title
+      - Content
+      - Slider
+    min: 0
+    max: 100
+    data:
+      -
+        block: Title
+        override:
+          content:
+            title: Texte de présentation
+            default: Hello i'm a guy with no name
+      -
+        block: Content
+      -
+        block: Content
+
+  format:
+    type: long_text

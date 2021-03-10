@@ -1,0 +1,19 @@
+field:
+
+  version: 1.0
+  package: ynk
+  
+  name: Text
+  desc: Simple text field
+
+  title: Text
+  info: Enter your text
+
+  option:
+    placeholder: 
+    size: 1rem
+
+  format:
+    type: string
+    max_lenght: 255
+    min_lenght: 0

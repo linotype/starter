@@ -1,0 +1,20 @@
+field:
+
+  version: 1.0
+  package: ynk
+  
+  name: Color
+  desc: Color picker
+
+  packages:
+    "preact": "latest"
+    "react-color": "latest"
+
+  title: Color
+  info: Select a color
+
+  option:
+    
+  
+  format:
+    type: long_text

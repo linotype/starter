@@ -1,0 +1,7 @@
+{
+    "name": "linotype/starter",
+    "type": "linotype",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

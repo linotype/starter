@@ -1,0 +1,22 @@
+block:
+
+  version: 1.2
+  package: ynk
+  
+  name: Content
+  desc: Content from editor.js
+  
+  parent: all
+  accept: all
+
+  context: 
+
+    content:
+      title: Content
+      desc: 
+      field: Editor
+      save: meta
+      option:
+      value: ''
+      default: 
+      preview: Lorem ipusum

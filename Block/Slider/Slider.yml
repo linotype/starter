@@ -1,0 +1,18 @@
+block:
+
+  version: 1.2
+  package: ynk
+  
+  name: Slider
+  desc: Create a slider
+  
+  packages:
+    "swiper": "6.4.11"
+
+  parent: all
+  accept: all
+
+  context: 
+
+
+  

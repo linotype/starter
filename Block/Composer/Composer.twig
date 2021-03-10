@@ -1,0 +1,7 @@
+{% if content %}
+  <div data-block-id="{{block.uid}}" id="{{block.id}}" class="{{block.class}}">
+    {% for key, item in linotype( 'helper', 'Composer.getItems', content ) %}
+      {{ linotype('block', item.block, item.context, 'composer-item--' ~ key ) }}
+    {% endfor %}
+  </div>
+{% endif %}

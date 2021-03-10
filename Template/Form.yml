@@ -1,0 +1,25 @@
+template:
+
+  version: 1.0
+  package: ynk
+
+  name: Form
+  desc: Simple form page
+
+  type: single
+
+  layout:
+
+    header:
+      module: Header
+
+    form:
+      block: Title
+      override:
+        text:
+          field: Text
+          save: static
+          value: FORM
+
+    footer:
+      module: Footer
