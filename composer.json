@@ -1,6 +1,6 @@
 {
     "name": "linotype/starter",
-    "type": "library",
+    "type": "linotype",
     "require": {
         "composer/installers": "~1.0"
     }
