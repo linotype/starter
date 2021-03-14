@@ -8,7 +8,6 @@
     "homepage": "https://linotype.dev",
     "license": "MIT",
     "require": {
-        "composer/installers": "~1.0",
-        "oomphinc/composer-installers-extender": "^2.0"
+        "linotype/installers": "v0.x-dev"
     }
 }
