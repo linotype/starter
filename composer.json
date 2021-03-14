@@ -9,5 +9,6 @@
     "license": "MIT",
     "require": {
         "linotype/installers": "v0.x-dev"
-    }
+    },
+    "minimum-stability": "dev"
 }
