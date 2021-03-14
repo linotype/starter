@@ -8,7 +8,7 @@
     "homepage": "https://linotype.dev",
     "license": "MIT",
     "require": {
-        "linotype/installers": "v0.x-dev"
+        "linotype/installers": "*"
     },
     "minimum-stability": "dev"
 }
