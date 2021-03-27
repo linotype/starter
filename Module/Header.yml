@@ -1,7 +1,7 @@
 module:
 
   version: 1.0
-  package: ynk
+  author: ynk
   
   name: Header
   desc: Display header website

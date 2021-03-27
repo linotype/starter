@@ -1,17 +1,21 @@
 field:
 
   version: 1.0
-  package: ynk
+  author: ynk
   
   name: Composer
   desc: Compose blocks from the backend
 
-  packages:
+  package:
     "dragula": "latest"
 
   title: Compose
   info: Create content with blocks
+  require: false
 
+  format:
+    type: long_text
+    
   option:
     blocks: 
       - Title
@@ -30,6 +34,3 @@ field:
         block: Content
       -
         block: Content
-
-  format:
-    type: long_text

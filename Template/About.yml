@@ -1,12 +1,10 @@
 template:
 
   version: 1.0
-  package: ynk
+  author: ynk
 
   name: About
   desc: Your presentation
-
-  type: single
   
   layout:
 

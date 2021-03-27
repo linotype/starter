@@ -1,12 +1,10 @@
 template:
 
   version: 1.0
-  package: ynk
+  author: ynk
 
   name: Page
   desc: Simple page
-
-  type: single
 
   layout:
 

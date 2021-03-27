@@ -1,7 +1,8 @@
 theme:
   
   version: 1.0
-  package: ynk
+  author: ynk
+
   name: Default
   desc: default theme
 

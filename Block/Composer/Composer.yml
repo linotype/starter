@@ -1,7 +1,7 @@
 block:
 
   version: 1.2
-  package: ynk
+  author: ynk
   
   name: Composer
   desc: Render of composed blocks
@@ -12,10 +12,10 @@ block:
   context: 
 
     content:
-      title: Compose
+      name: Compose
       desc: Create content with blocks
       field: Composer
-      save: meta
+      persist: meta
       option:
       value: ''
       default: 

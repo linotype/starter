@@ -1,13 +1,11 @@
 template:
 
   version: 1.0
-  package: ynk
+  author: ynk
 
   name: Composer
   desc: Test page for composer
 
-  type: single
-  
   layout:
 
     # header:

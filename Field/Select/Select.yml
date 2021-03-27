@@ -1,22 +1,26 @@
 field:
 
   version: 1.0
-  package: ynk
+  author: ynk
   
   name: Select
   desc: Select options
 
-  packages:
+  package:
     "choices.js": "latest"
 
   title: Select
-  info: Choose one option 
+  info: Choose one option
+  require: false
+
+  format:
+    type: long_text
 
   option:
+    
     data:
       option1: 'Option 1'
       option2: 'Option 2'
       option3: 'Option 3'
   
-  format:
-    type: long_text
+  

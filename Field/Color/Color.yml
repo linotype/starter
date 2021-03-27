@@ -1,20 +1,19 @@
 field:
 
   version: 1.0
-  package: ynk
+  author: ynk
   
   name: Color
   desc: Color picker
 
-  packages:
-    "preact": "latest"
-    "react-color": "latest"
+  package:
+    "simonwep/pickr": "latest"
 
   title: Color
   info: Select a color
+  require: false
 
-  option:
-    
-  
   format:
     type: long_text
+
+  option:

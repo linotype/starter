@@ -1,13 +1,11 @@
 template:
 
   version: 1.0
-  package: ynk
+  author: ynk
 
   name: Test
   desc: Test page
 
-  type: single
-  
   layout:
     
     title:
