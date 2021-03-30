@@ -7,7 +7,7 @@ field:
   desc: Simple text field
 
   title: Text
-  info: Enter your text
+  help: Enter your text
   require: false
 
   format:

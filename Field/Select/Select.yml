@@ -10,7 +10,7 @@ field:
     "choices.js": "latest"
 
   title: Select
-  info: Choose one option
+  help: Choose one option
   require: false
 
   format:

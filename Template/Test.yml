@@ -25,7 +25,7 @@ template:
           
     test2:
       block: Container
-      childrens:
+      children:
         0:
           block: Title
           override:
@@ -33,7 +33,7 @@ template:
               value: Block 1
         1:
           block: Container
-          childrens:
+          children:
             0:
               block: Menu
             1:
@@ -43,7 +43,7 @@ template:
                   value: Block 2a
             2:
               block: Container
-              childrens:
+              children:
                 0:
                   block: Title
                   override:
@@ -51,7 +51,7 @@ template:
                       value: Block 1b
                 1:
                   block: Container
-                  childrens:
+                  children:
                     0:
                       block: Title
                       override:

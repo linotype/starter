@@ -10,7 +10,7 @@ field:
     "dragula": "latest"
 
   title: Compose
-  info: Create content with blocks
+  help: Create content with blocks
   require: false
 
   format:

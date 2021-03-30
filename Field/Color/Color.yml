@@ -10,7 +10,7 @@ field:
     "simonwep/pickr": "latest"
 
   title: Color
-  info: Select a color
+  help: Select a color
   require: false
 
   format:
