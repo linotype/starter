@@ -8,29 +8,32 @@ template:
 
   layout:
 
-    header:
-      module: Header
+    # header:
+    #   module: Header
 
     intro:
       block: Title
-      override:
-        text:
-          title: Texte ligne 1
 
-    content:
+    intro2:
       block: Title
       override:
         text:
-          title: Texte ligne 2
-          field: Text
-          save: static
-          value: Edited from template static override !
+          value: Texte ligne 1
+
+    # content:
+    #   block: Title
+    #   override:
+    #     text:
+    #       title: Texte ligne 2
+    #       field: Text
+    #       save: static
+    #       value: Edited from template static override !
     
-    outro:
-      block: Title
-      override:
-        text:
-          title: Texte ligne 3
+    # outro:
+    #   block: Title
+    #   override:
+    #     text:
+    #       title: Texte ligne 3
       
-    footer:
-      module: Footer
+    # footer:
+    #   module: Footer
