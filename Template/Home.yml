@@ -18,22 +18,22 @@ template:
       block: Title
       override:
         text:
-          value: Texte ligne 1
+          value: Simple overide
 
-    # content:
-    #   block: Title
-    #   override:
-    #     text:
-    #       title: Texte ligne 2
-    #       field: Text
-    #       save: static
-    #       value: Edited from template static override !
+    content:
+      block: Title
+      override:
+        text:
+          title: Texte ligne 2
+          field: Text
+          save: static
+          value: Edited from template static override !
     
-    # outro:
-    #   block: Title
-    #   override:
-    #     text:
-    #       title: Texte ligne 3
+    outro:
+      block: Title
+      override:
+        text:
+          title: Texte ligne 3
       
-    # footer:
-    #   module: Footer
+    footer:
+      module: Footer
