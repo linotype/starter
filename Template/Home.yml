@@ -8,8 +8,8 @@ template:
 
   layout:
 
-    # header:
-    #   module: Header
+    header:
+      module: Header
 
     intro:
       block: Title

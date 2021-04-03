@@ -17,10 +17,10 @@ block:
       desc: Your menu items
       field: Text
       persist: static
-      # value:  []
-      #   home:
-      #     name: Home
-      #     path: /
+      value:  
+        # home:
+        #   name: Home
+        #   path: /
     
     padding:
       field: Text
