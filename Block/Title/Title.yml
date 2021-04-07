@@ -18,10 +18,9 @@ block:
       persist: meta
       option:
         placeholder: The title
-      value: '' #TODO debug if empty
       default: The default block context value
       preview: Lorem ipusum
-      js: true
+      js: false
     
     tag:
       name: Tag

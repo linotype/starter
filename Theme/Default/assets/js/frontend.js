@@ -2,7 +2,7 @@ import { Application } from "stimulus"
 import * as Turbo from "@hotwired/turbo"
 
 const application = Application.start()
-const context = require.context("./../Block", true, /\.js$/)
+const context = require.context("./../../../../Block", true, /\.js$/)
 
 function definitionsFromContext(context) {
     return context.keys()

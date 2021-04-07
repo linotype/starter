@@ -8,12 +8,32 @@ module:
 
   layout:
 
-    poweredby:
-      block: Title
-      override:
-        text:
-          field: Text
-          save: static
-          value: powered by linotype - <a href="https://docs.linotype.dev" target="_blank">docs</a> - <a href="/linotype">helper</a> - <a href="/admin">admin</a>
-        font_size:
-          value: 1rem
+    footer:
+      block: Container
+      children:
+        col-1:
+          block: Container
+          children:
+            content:
+              block: Title
+              override:
+                text: 
+                  value: Footer
+        col-2:
+          block: Container
+          children:
+            poweredby:
+              block: Title
+              override:
+                text:
+                  field: Text
+                  save: static
+                  value: powered by linotype - <a href="https://docs.linotype.dev" target="_blank">docs</a> - <a href="/linotype">helper</a> - <a href="/admin">admin</a>
+                font_size:
+                  value: .7rem
+          
+
+
+          
+
+    

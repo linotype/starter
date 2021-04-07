@@ -8,7 +8,7 @@ library.add(faArrowAltCircleLeft);
 dom.watch();
 
 const application = Application.start()
-const context = require.context("./../Field", true, /\.js$/)
+const context = require.context("./../../../../Field", true, /\.js$/)
 
 function definitionsFromContext(context) {
     return context.keys()

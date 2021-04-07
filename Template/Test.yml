@@ -12,43 +12,37 @@ template:
       block: Title
       override:
         text: 
-          value: Titre simple
+          value: Titre simple X
         font_size:
-          value: 4rem
+          value: 8rem
           css: true
         color:
           default: red
           css: true
 
-    # menu:
-    #   block: Menu
+    menu:
+      block: Menu
           
     test2:
       block: Container
       children:
-        0:
+        child-1:
           block: Title
           override:
             text: 
               value: Block 1
-        1:
+        child-2:
           block: Container
           children:
             0:
               block: Menu
-            1:
-              block: Title
-              override: 
-                text: 
-                  value: Block 2a
+            # 1:
+            #   block: Confetti
             2:
               block: Container
               children:
                 0:
-                  block: Title
-                  override:
-                    text: 
-                      value: Block 1b
+                  block: Slider
                 1:
                   block: Container
                   children:
@@ -62,17 +56,270 @@ template:
                       override: 
                         text: 
                           value: Block 1c
+
+                    test2:
+                      block: Container
+                      children:
+                        0:
+                          block: Title
+                          override:
+                            text: 
+                              value: Block 1
+                        1:
+                          block: Container
+                          children:
+                            0:
+                              block: Menu
+                            1:
+                              block: Title
+                              override: 
+                                text: 
+                                  value: Block 2a
+                            2:
+                              block: Container
+                              children:
+                                0:
+                                  block: Title
+                                  override:
+                                    text: 
+                                      value: Block 1b
+                                1:
+                                  block: Container
+                                  children:
+                                    0:
+                                      block: Title
+                                      override:
+                                        text: 
+                                          value: Block 1c
+                                    1:
+                                      block: Title
+                                      override: 
+                                        text: 
+                                          value: Block 1c
+
+                                    test2:
+                                      block: Container
+                                      children:
+                                        0:
+                                          block: Title
+                                          override:
+                                            text: 
+                                              value: Block 1
+                                        1:
+                                          block: Container
+                                          children:
+                                            0:
+                                              block: Menu
+                                            1:
+                                              block: Title
+                                              override: 
+                                                text: 
+                                                  value: Block 2a
+                                            2:
+                                              block: Container
+                                              children:
+                                                0:
+                                                  block: Slider
+                                                1:
+                                                  block: Container
+                                                  children:
+                                                    0:
+                                                      block: Title
+                                                      override:
+                                                        text: 
+                                                          value: Block 1c
+                                                    1:
+                                                      block: Title
+                                                      override: 
+                                                        text: 
+                                                          value: Block 1c
+                                                2:
+                                                  block: Title
+                                                  override:
+                                                    text: 
+                                                      value: Block 2b
+
+                                        2:
+                                          block: Title
+                                          override:
+                                            text: 
+                                              value: Block 2
+                                2:
+                                  block: Title
+                                  override:
+                                    text: 
+                                      value: Block 2b
+
+                        2:
+                          block: Title
+                          override:
+                            text: 
+                              value: Block 2
                 2:
                   block: Title
                   override:
                     text: 
                       value: Block 2b
 
-        2:
+        child-3:
+          block: Container
+          children:
+            0:
+              block: Title
+              override:
+                text: 
+                  value: Block 1
+            1:
+              block: Container
+              children:
+                0:
+                  block: Menu
+                1:
+                  block: Title
+                  override: 
+                    text: 
+                      value: Block 2a
+                2:
+                  block: Container
+                  children:
+                    0:
+                      block: Title
+                      override:
+                        text: 
+                          value: Block 1b
+                    1:
+                      block: Container
+                      children:
+                        0:
+                          block: Title
+                          override:
+                            text: 
+                              value: Block 1c
+                        1:
+                          block: Title
+                          override: 
+                            text: 
+                              value: Block 1c
+
+                        test2:
+                          block: Container
+                          children:
+                            0:
+                              block: Title
+                              override:
+                                text: 
+                                  value: Block 1
+                            1:
+                              block: Container
+                              children:
+                                0:
+                                  block: Menu
+                                1:
+                                  block: Title
+                                  override: 
+                                    text: 
+                                      value: Block 2a
+                                2:
+                                  block: Container
+                                  children:
+                                    0:
+                                      block: Title
+                                      override:
+                                        text: 
+                                          value: Block 1b
+                                    1:
+                                      block: Container
+                                      children:
+                                        0:
+                                          block: Slider
+                                        1:
+                                          block: Title
+                                          override:
+                                            text: 
+                                              value: Block 1c
+                                        2:
+                                          block: Slider
+
+                                        test2:
+                                          block: Container
+                                          children:
+                                            0:
+                                              block: Title
+                                              override:
+                                                text: 
+                                                  value: Block 1
+                                            1:
+                                              block: Container
+                                              children:
+                                                0:
+                                                  block: Menu
+                                                1:
+                                                  block: Title
+                                                  override: 
+                                                    text: 
+                                                      value: Block 2a
+                                                2:
+                                                  block: Container
+                                                  children:
+                                                    0:
+                                                      block: Title
+                                                      override:
+                                                        text: 
+                                                          value: Block 1b
+                                                    1:
+                                                      block: Container
+                                                      children:
+                                                        0:
+                                                          block: Title
+                                                          override:
+                                                            text: 
+                                                              value: Block 1c
+                                                        1:
+                                                          block: Title
+                                                          override: 
+                                                            text: 
+                                                              value: Block 1c
+                                                    2:
+                                                      block: Title
+                                                      override:
+                                                        text: 
+                                                          value: Block 2b
+
+                                            2:
+                                              block: Title
+                                              override:
+                                                text: 
+                                                  value: Block 2
+                                    2:
+                                      block: Title
+                                      override:
+                                        text: 
+                                          value: Block 2b
+
+                            2:
+                              block: Title
+                              override:
+                                text: 
+                                  value: Block 2
+                    2:
+                      block: Title
+                      override:
+                        text: 
+                          value: Block 2b
+
+            2:
+              block: Title
+              override:
+                text: 
+                  value: Block 2
+                  
+        child-4:
           block: Title
           override:
             text: 
               value: Block 2
+    
+    
 
     # test1:
     #   block: RenderBlocks
@@ -90,5 +337,5 @@ template:
     #             title:
     #               title: Cool
 
-    # footer:
-    #   module: Footer
+    footer:
+      module: Footer
