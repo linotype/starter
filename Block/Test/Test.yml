@@ -1,0 +1,25 @@
+block:
+
+  version: 1.2
+  author: linotype
+  
+  name: Test
+  desc: Create a simple test block
+  
+  parent: all
+  accept: all
+
+  context: 
+
+    # text:
+    #   name: Text du titre
+    #   desc: 
+    #   field: Text
+    #   persist: meta
+    #   option:
+    #     placeholder: The title
+    #   default: The default block context value
+    #   preview: Lorem ipusum
+    #   js: false
+    
+    
