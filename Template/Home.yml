@@ -28,6 +28,15 @@ template:
           field: Text
           save: static
           value: Edited from template static override !
+        color:
+          field: Color
+          persist: meta
+          value: blue
+        margin:
+          field: Text
+          persist: meta
+          value: 5rem 0
+          css: true
     
     outro:
       block: Title

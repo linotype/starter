@@ -12,12 +12,14 @@ template:
       block: Title
       override:
         text: 
-          value: Titre simple X
+          value: Titre simple
+        tag:
+          value: h1
         font_size:
-          value: 8rem
-          css: true
+          value: 3rem
+          # css: true
         color:
-          default: red
+          value: red
           css: true
 
     menu:
@@ -31,6 +33,8 @@ template:
           override:
             text: 
               value: Block 1
+            tag:
+              value: h1
         child-2:
           block: Container
           children:
@@ -128,6 +132,10 @@ template:
                                                       override:
                                                         text: 
                                                           value: Block 1c
+                                                        font_size:
+                                                          value: 3rem
+                                                        color:
+                                                          value: red
                                                     1:
                                                       block: Title
                                                       override: 

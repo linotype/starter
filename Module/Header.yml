@@ -15,10 +15,15 @@ module:
           field: Text
           save: static
           value: Linotype
+        tag:
+          value: h1
         font_size:
-          value: 5rem
+          value: 2rem
           css: true
           js: true
+        margin:
+          value: 0rem
+          css: true
         color:
           title: Couleur du titre du site
           field: Color
