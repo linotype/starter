@@ -8,8 +8,8 @@ template:
 
   layout:
 
-    # header:
-    #   module: Header
+    header:
+      module: Header
 
     content:
       block: Composer

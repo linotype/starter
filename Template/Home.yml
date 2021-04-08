@@ -32,6 +32,7 @@ template:
           field: Color
           persist: meta
           value: blue
+          css: true
         margin:
           field: Text
           persist: meta

@@ -19,7 +19,7 @@ template:
       override:
         content:
           title: Texte de présentation
-          default: Hello i'm a guy with no name
+          default: Hello i'm a guy without name
 
     footer:
       module: Footer
