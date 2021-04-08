@@ -1,9 +1,10 @@
 theme:
   
   version: 1.0
-  package: ynk
-  name: Default
-  desc: default theme
+  author: linotype
+
+  name: Futuroscope
+  desc: Futuroscope theme
 
   map:
     

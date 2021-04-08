@@ -1,19 +1,20 @@
 field:
 
   version: 1.0
-  package: ynk
+  author: linotype
   
   name: Text
   desc: Simple text field
 
   title: Text
-  info: Enter your text
-
-  option:
-    placeholder: 
-    size: 1rem
+  help: Enter your text
+  require: false
 
   format:
     type: string
     max_lenght: 255
     min_lenght: 0
+
+  option:
+    placeholder: 
+    size: 1rem

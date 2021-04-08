@@ -1,7 +1,7 @@
 block:
 
   version: 1.2
-  package: ynk
+  author: ynk
   
   name: Content
   desc: Content from editor.js
@@ -12,10 +12,10 @@ block:
   context: 
 
     content:
-      title: Content
+      name: Content
       desc: 
       field: Editor
-      save: meta
+      persist: meta
       option:
       value: ''
       default: 

@@ -1,12 +1,10 @@
 template:
 
   version: 1.0
-  package: ynk
+  author: ynk
 
   name: Home
   desc: Home page
-
-  type: single
 
   layout:
 
@@ -15,9 +13,12 @@ template:
 
     intro:
       block: Title
+
+    intro2:
+      block: Title
       override:
         text:
-          title: Texte ligne 1
+          value: Simple overide
 
     content:
       block: Title
@@ -27,6 +28,16 @@ template:
           field: Text
           save: static
           value: Edited from template static override !
+        color:
+          field: Color
+          persist: meta
+          value: blue
+          css: true
+        margin:
+          field: Text
+          persist: meta
+          value: 5rem 0
+          css: true
     
     outro:
       block: Title

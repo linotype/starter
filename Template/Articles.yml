@@ -1,12 +1,10 @@
 template:
 
   version: 1.0
-  package: ynk
+  author: ynk
   
   name: Articles
   desc: Simple articles list page
-
-  type: multiple
 
   layout:
 

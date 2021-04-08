@@ -1,5 +1,5 @@
 linotype:
   version: 1.0
-  debug: false
+  debug: true
   preview: false
   theme: Default

@@ -6,12 +6,12 @@ const path = require("path")
 module.exports = {
   entry: {
     frontend: [ 
-      "./frontend.js",
-      "./frontend.scss" 
+      "./assets/js/frontend.js",
+      "./assets/scss/frontend.scss" 
     ],
     backend: [ 
-      "./backend.js",
-      "./backend.scss" 
+      "./assets/js/backend.js",
+      "./assets/scss/backend.scss" 
     ],
     //.concat( glob.sync( path.resolve(__dirname + '/../../', 'linotype') + "/Block/**/*.js" ) )
     //.concat( glob.sync( path.resolve(__dirname + '/../../', 'linotype') + "/Block/**/*.scss" ) )
@@ -57,7 +57,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             esModule: false,
-            name: path.resolve(__dirname + '/../../public', 'assets/img') + "/[name].[ext]"
+            name: path.resolve(__dirname + '/../../../public', 'assets/img') + "/[name].[ext]"
           }
         }
       }
@@ -70,7 +70,7 @@ module.exports = {
   devtool: "source-map",
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname + '/../../public', 'assets/js'),
+    path: path.resolve(__dirname + '/../../../public', 'assets/js'),
     sourceMapFilename: "[name].map"
   },
   plugins: [

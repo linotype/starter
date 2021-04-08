@@ -1,14 +1,8 @@
 import { Application } from "stimulus"
-// import * as Turbo from "@hotwired/turbo"
-
-import { library, dom } from "@fortawesome/fontawesome-svg-core";
-import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons/faArrowAltCircleLeft";
-
-library.add(faArrowAltCircleLeft);
-dom.watch();
+import * as Turbo from "@hotwired/turbo"
 
 const application = Application.start()
-const context = require.context("./../Field", true, /\.js$/)
+const context = require.context("./../../../../Block", true, /\.js$/)
 
 function definitionsFromContext(context) {
     return context.keys()
@@ -37,4 +31,4 @@ function identifierForContextKey(key) {
 
 application.load(definitionsFromContext(context))
 
-// Turbo.start();
+Turbo.start();

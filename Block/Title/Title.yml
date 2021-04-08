@@ -1,7 +1,7 @@
 block:
 
   version: 1.2
-  package: ynk
+  author: linotype
   
   name: Title
   desc: Create a simple title
@@ -12,22 +12,21 @@ block:
   context: 
 
     text:
-      title: Text du titre
+      name: Text du titre
       desc: 
       field: Text
-      save: meta
+      persist: meta
       option:
         placeholder: The title
-      value: '' #TODO debug if empty
       default: The default block context value
       preview: Lorem ipusum
-      js: true
+      js: false
     
     tag:
-      title: Tag
+      name: Tag
       desc: Define the title tag
       field: Text
-      save: static
+      persist: static
       option:
         data:
           h1: H1
@@ -36,33 +35,36 @@ block:
           h4: H4
           h5: H5
           h6: H6
-      default: h1
+          p: p
+          span: span
+          div: div
+      default: span
       css: false
       js: false
 
     color:
-      title: Couleur du titre
+      name: Couleur du titre
       desc: 
       field: Text
-      save: static
+      persist: static
       default: '#bdbdbd'
       css: false
       js: false
 
     margin:
-      title: Marge du titre
+      name: Marge du titre
       desc: 
       field: Text
-      save: static
+      persist: static
       value: 1rem 0 1rem 0
       css: false
       js: false
 
     font_size:
-      title: Taille du titre
+      name: Taille du titre
       desc: 
       field: Text
-      save: static
+      persist: static
       value: 2rem
       css: true
       js: false

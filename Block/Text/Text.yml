@@ -1,21 +1,23 @@
 block:
 
   version: 1.2
-  package: ynk
+  author: ynk
   
   name: Title
   desc: Create a simple title
   
+  package:
+
   parent: all
   accept: all
 
   context: 
 
     text:
-      title: Text
+      name: Text
       desc: Your text content
       field: Text
-      save: meta
+      persist: meta
       option:
         placeholder: The title
       value: '' #TODO debug if empty
@@ -25,10 +27,10 @@ block:
 
     margin:
       field: Text
-      save: static
+      persist: static
       value: 1rem 0 1rem 0
 
     font_size:
       field: Text
-      save: static
+      persist: static
       value: 2rem

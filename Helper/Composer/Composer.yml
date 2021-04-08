@@ -1,19 +1,19 @@
 helper:
 
   version: 1.0
-  package: ynk
+  author: linotype
   
   name: Composer
   desc: Get composer data
   
-  methodes:
+  methode:
 
     getItems:
-      title: Get composer item with context
+      name: Get composer item with context
       desc: Return array of items
       controller: Linotype\Helper\Composer\Composer::getItems
 
     getFields:
-      title: Get composer form items
+      name: Get composer form items
       desc: Return array of items
       controller: Linotype\Helper\Composer\Composer::getFields
