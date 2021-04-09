@@ -10,7 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class MenuService extends AbstractController
 {
 
-    public function __construct( MenuHelper $helper, Linotype $linotype ){
+    public function __construct( Linotype $linotype, MenuHelper $helper ){
         $this->linotype = $linotype;
         $this->helper = $helper;
         
@@ -18,7 +18,7 @@ class MenuService extends AbstractController
 
     public function getMenuItems( $context = [] )
     {
-        return ['menu'];
+        
         $this->linotype->log('MenuService from bundle');
 
         //return static items if exist
