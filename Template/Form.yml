@@ -16,7 +16,7 @@ template:
       override:
         text:
           field: Text
-          save: static
+          persist: static
           value: FORM
 
     footer:

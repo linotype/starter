@@ -12,8 +12,9 @@ module:
       block: Title
       override:
         text:
+          title: Website title 
           field: Text
-          save: static
+          persist: option
           value: Linotype
         tag:
           value: h1

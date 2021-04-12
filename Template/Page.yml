@@ -19,7 +19,7 @@ template:
       override:
         text:
           field: Text
-          save: static
+          persist: static
           value: Me too, from template static override !
     
     outro:

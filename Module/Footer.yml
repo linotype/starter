@@ -27,7 +27,7 @@ module:
               override:
                 text:
                   field: Text
-                  save: static
+                  persist: static
                   value: powered by linotype - <a href="https://docs.linotype.dev" target="_blank">docs</a> - <a href="/linotype">helper</a> - <a href="/admin">admin</a>
                 font_size:
                   value: .7rem
