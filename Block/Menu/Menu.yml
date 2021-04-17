@@ -12,15 +12,18 @@ block:
 
   context: 
 
+    menu_id:
+      value: master
+
     items:
       name: Items
       desc: Your menu items
       field: Text
       persist: static
-      value:  
-        # home:
-        #   name: Home
-        #   path: /
+      # helper:
+      #   methode: getMenuItems
+      #   params:
+      #     menu_id: this.menu_id
     
     padding:
       field: Text

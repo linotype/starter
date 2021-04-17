@@ -11,6 +11,7 @@ theme:
     home:
       name: Home
       desc: The home page
+      icon: '@Linotype/Icons/home.svg'
       public: true
       path: /
       template: Home
@@ -23,6 +24,7 @@ theme:
     about:
       name: About
       desc: Present yourself
+      icon: '@Linotype/Icons/user.svg'
       public: true
       path: /about
       template: About
@@ -35,6 +37,7 @@ theme:
     articles:
       name: Articles
       desc: List of article
+      icon: '@Linotype/Icons/book.svg'
       public: true
       path: /articles
       template: Articles
@@ -47,6 +50,7 @@ theme:
     article:
       name: Article
       desc: Display one article
+      icon: '@Linotype/Icons/bookmark.svg'
       public: true
       path: /article/{id}
       template: Article
@@ -59,6 +63,7 @@ theme:
     contact:
       name: Contact
       desc: Contact form
+      icon: '@Linotype/Icons/send.svg'
       public: true
       path: /contact
       template: Form
@@ -75,6 +80,7 @@ theme:
     test:
       name: Test
       desc: Simple test page
+      icon: '@Linotype/Icons/alert-circle.svg'
       public: false
       path: /test
       template: Test
@@ -87,6 +93,7 @@ theme:
     composer:
       name: Composer
       desc: Simple test page for composer
+      icon: '@Linotype/Icons/file-plus.svg'
       public: false
       path: /composer
       template: Composer

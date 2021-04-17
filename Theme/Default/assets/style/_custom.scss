@@ -1,0 +1,105 @@
+body{ 
+    height:100vh; 
+}
+
+.off-canvas .off-canvas-content {
+    padding: 0;
+}
+
+.col-auto {
+    max-width: 100%;
+}
+
+.page {
+    padding: 0.6rem 0.8rem;
+    overflow-y: auto;
+    min-width: 500px;
+}
+
+.logo {
+    white-space: nowrap;
+    text-decoration: none;
+    outline: none;
+    display: block;
+    padding: 20px;
+    width: 200px;
+    &:hover,
+    &:focus { 
+        outline: none; 
+        text-decoration: none;
+        box-shadow:none;
+    }
+    .logo-picto {
+        display: inline-block;
+        vertical-align: middle;
+        width: 20%;
+    }
+    .logo-text {
+        display: inline-block;
+        vertical-align: middle;
+        width: 80%;
+        padding: 0 10px;
+    }
+}
+
+.custom-icon {
+    display: inline-block;
+    > svg {
+        stroke: currentColor;
+        stroke-width: 2px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: inherit;
+        font-style: normal;
+        height: 1em;
+        margin-top: -0.2em;
+        position: relative;
+        text-indent: -9999px;
+        vertical-align: middle;
+        width: 1em;
+    }
+}
+
+.menu {
+    padding: 0;
+    min-width: inherit;
+    .menu-item {
+        a {
+            margin: 0 -0.2rem;
+            .menu-item-title {
+                margin: 0 0.4rem;
+            }
+        }
+    }
+}
+
+.toolbar.minimize {
+    min-width: 75px;
+    width: 75px;
+    .panel{
+        overflow: hidden;
+    }
+    .logo-text{
+        display:none;
+    }
+    .menu-item-title {
+        display:none;
+    }
+    .menu {
+        padding: 0;
+        min-width: inherit;
+        .menu-item > a {
+            margin: 0 -0.2rem;
+        }
+    }
+}
+
+.viewer {
+    .viewer-frame {
+        border:none;
+        height:100%;
+    }
+}

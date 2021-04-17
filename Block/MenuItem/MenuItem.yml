@@ -14,7 +14,7 @@ block:
     name:
       field: Text
       persist: static
-      value: 1rem
+      default: Title
 
     path:
       field: Text

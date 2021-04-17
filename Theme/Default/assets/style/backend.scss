@@ -1,0 +1,19 @@
+
+$primary-color: #5755d9 !default;
+$primary-color-dark: darken($primary-color, 3%) !default;
+$primary-color-light: lighten($primary-color, 3%) !default;
+$secondary-color: lighten($primary-color, 37.5%) !default;
+$secondary-color-dark: darken($secondary-color, 3%) !default;
+$secondary-color-light: lighten($secondary-color, 3%) !default;
+$bg-color: #fff;
+
+@import "node_modules/spectre.css/src/spectre";
+@import "node_modules/spectre.css/src/spectre-icons";
+
+@import "node_modules/spectre.css/src/_off-canvas";
+
+@import './../../../../Field/**/**.scss';
+
+@import "_helpers";
+
+@import "_custom";
