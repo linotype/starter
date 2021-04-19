@@ -1,0 +1,40 @@
+.field--quill {
+  display: relative;
+
+  .ql-container {
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  .ql-editor {
+
+    p,
+    ol,
+    ul,
+    pre,
+    blockquote,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: inherit;
+      padding: inherit;
+    }
+
+    &.ql-blank::before {
+      color: rgba(0, 0, 0, 0.3);
+      margin: inherit;
+      padding: inherit;
+    }
+
+    line {
+      display: block;
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+  }
+
+}

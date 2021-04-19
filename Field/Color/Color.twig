@@ -1,8 +1,8 @@
-<div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="linotype-field {{field.class}}" data-type="Color" data-controller="Color">
-    <div class="title">{{title}}</div>
-    <div class="field">
-        <div class="color-picker--{{field.id}}"></div>
-        <input id="color-picker-value--{{field.id}}" name="{{field.key}}" class="linotype-field-value" style-off="display:none" value="{{field.value}}">
+<div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Color" data-controller="Color">
+    <label class="form-label" for="input-example-1">{{title}}</label>
+    <div class="input-group">
+        <div class="input-group-addon addon-sm"><div class="color-picker--{{field.id}}"></div></div>
+        <input id="color-picker-value--{{field.id}}" class="linotype-field-value form-input" name="{{field.key}}" placeholder="{{placeholder}}" value="{{field.value}}">
     </div>
-    <div class="desc">{{help}}</div>
+    <p class="form-help">{{help}}</p>
 </div>

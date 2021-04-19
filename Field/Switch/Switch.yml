@@ -3,8 +3,8 @@ field:
   version: 1.0
   author: linotype
   
-  name: Text
-  desc: Simple text field
+  name: Switch
+  desc: Simple switch field
 
   title: Label
   help: Enter your text
@@ -16,5 +16,4 @@ field:
     min_lenght: 0
 
   option:
-    placeholder: 
-    size: #sm lg xl
+    info: Enable

@@ -1,7 +1,7 @@
 .block--title {
   display: relative;
   font-size: var(--font_size, 1.2rem);
-  color: var(--color, #bdbdbd);
+  color: var(--color, #333);
   margin: var(--margin, 1rem 0 1rem 0);
   > * { margin: 0; }
 }

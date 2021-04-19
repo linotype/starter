@@ -22,7 +22,7 @@ template:
       block: Title
       override:
         text:
-          value: Simple overide
+          default: Simple overide
 
     content:
       block: Title
@@ -31,16 +31,16 @@ template:
           title: Texte ligne 2
           field: Text
           persist: static
-          value: Edited from template static override !
+          default: Edited from template static override !
         color:
           field: Color
           persist: meta
-          value: blue
+          default: blue
           css: true
         margin:
           field: Text
           persist: meta
-          value: 5rem 0
+          default: 1rem 0
           css: true
     
     outro:

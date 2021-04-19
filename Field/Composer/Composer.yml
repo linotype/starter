@@ -9,7 +9,7 @@ field:
   package:
     "dragula": "latest"
 
-  title: Compose
+  title: Label
   help: Create content with blocks
   require: false
 
@@ -21,6 +21,7 @@ field:
       - Title
       - Content
       - Slider
+      # - Composer
     min: 0
     max: 100
     data:

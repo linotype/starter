@@ -1,0 +1,61 @@
+field:
+
+  version: 1.0
+  author: linotype
+  
+  name: Quill Editor
+  desc: Rich text editor
+
+  title: Label
+  help: Enter your text
+  require: false
+
+  format:
+    type: string
+    max_lenght: LONG_TEXT
+    min_lenght: 0
+
+  option:
+    placeholder: Type your text here
+    theme: snow
+    p: true
+    syntax: true
+    toolbar: default #or pass array setting by override
+    toolbar_presets:
+      minimal: [
+        ['bold', 'italic', 'underline'],
+        [
+          { 'color': ['#001f3f','#0074D9','#7FDBFF','#39CCCC','#3D9970','#2ECC40','#01FF70','#FFDC00','#FF851B','#FF4136','#85144b','#F012BE','#B10DC9','#111111','#AAAAAA','#DDDDDD'] }, 
+          { 'background': ['#001f3f','#0074D9','#7FDBFF','#39CCCC','#3D9970','#2ECC40','#01FF70','#FFDC00','#FF851B','#FF4136','#85144b','#F012BE','#B10DC9','#111111','#AAAAAA','#DDDDDD'] }
+        ]  
+      ]
+      default: [
+        [{ 'header': [2, 3, 4, 5, 6, false] }],
+        [{ 'size': ['small', false, 'large', 'huge'] }],   
+        [{ 'align': [] }],
+        ['bold', 'italic', 'underline', 'strike'],        
+        ['blockquote', 'code-block'],             
+        [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+        [{ 'script': 'sub'}, { 'script': 'super' }],      
+        [{ 'indent': '-1'}, { 'indent': '+1' }],            
+        [
+          { 'color': ['#001f3f','#0074D9','#7FDBFF','#39CCCC','#3D9970','#2ECC40','#01FF70','#FFDC00','#FF851B','#FF4136','#85144b','#F012BE','#B10DC9','#111111','#AAAAAA','#DDDDDD'] }, 
+          { 'background': ['#001f3f','#0074D9','#7FDBFF','#39CCCC','#3D9970','#2ECC40','#01FF70','#FFDC00','#FF851B','#FF4136','#85144b','#F012BE','#B10DC9','#111111','#AAAAAA','#DDDDDD'] }
+        ],  
+        ['clean']
+      ]
+      full: [
+        ['bold', 'italic', 'underline', 'strike'],        
+        ['blockquote', 'code-block'],
+        [{ 'header': 1 }, { 'header': 2 }],               
+        [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+        [{ 'script': 'sub'}, { 'script': 'super' }],      
+        [{ 'indent': '-1'}, { 'indent': '+1' }],         
+        [{ 'direction': 'rtl' }],                         
+        [{ 'size': ['small', false, 'large', 'huge'] }],  
+        [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+        [{ 'color': [] }, { 'background': [] }],          
+        [{ 'font': [] }],
+        [{ 'align': [] }],
+        ['clean']
+      ]

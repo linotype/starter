@@ -3,8 +3,8 @@ field:
   version: 1.0
   author: linotype
   
-  name: Text
-  desc: Simple text field
+  name: Textarea
+  desc: Simple textarea field
 
   title: Label
   help: Enter your text
@@ -12,9 +12,9 @@ field:
 
   format:
     type: string
-    max_lenght: 255
+    max_lenght: LONG_TEXT
     min_lenght: 0
 
   option:
     placeholder: 
-    size: #sm lg xl
+    rows: 3

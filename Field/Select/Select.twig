@@ -1,8 +1,11 @@
-<div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="linotype-field {{field.class}}" data-type="Select" data-controller="Select">
-    <h1>{{title}}</h1>
-    <select id="select--{{field.id}}" name="{{field.key}}" class="linotype-field-value">
-        <option value="1">1</option>
-        <option value="2">2</option>
+<div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Select" data-controller="Select">
+    <label class="form-label" for="input-example-1">{{title}}</label>
+    <select id="select--{{field.id}}" name="{{field.key}}" class="linotype-field-value form-select">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
     </select>
-    <div class="desc"><i>{{help}}</i></div>
+    <p class="form-help">{{help}}</p>
 </div>

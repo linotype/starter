@@ -10,8 +10,14 @@ body{
     max-width: 100%;
 }
 
+.form-input.input-xl {
+    font-size: 1.3rem;
+    height: 2.8rem;
+    padding: 0.35rem 0.48em;
+}
+
 .page {
-    padding: 0.6rem 0.8rem;
+    padding: 0.6rem 1.4rem 3.6rem 1.4rem;
     overflow-y: auto;
     min-width: 500px;
 }
@@ -77,10 +83,17 @@ body{
 }
 
 .toolbar.minimize {
+    overflow: visible;
     min-width: 75px;
     width: 75px;
     .panel{
-        overflow: hidden;
+        overflow: visible;
+        .panel-head {
+            overflow: hidden;
+        }
+        .panel-body{
+            overflow: visible;
+        }
     }
     .logo-text{
         display:none;
@@ -97,9 +110,18 @@ body{
     }
 }
 
-.viewer {
-    .viewer-frame {
-        border:none;
-        height:100%;
-    }
+.preview-frame {
+    border:none;
+    height:100%;
+    overflow: hidden;
+}
+.viewer-frame {
+    border:none;
+    height:100%;
+}
+
+.form-help {
+    color: #bcc3ce;
+    font-size: .7rem;
+    margin-top: .2rem;
 }

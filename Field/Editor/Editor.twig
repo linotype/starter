@@ -1,8 +1,8 @@
-<div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="linotype-field {{field.class}}" data-type="Editor" data-controller="Editor">
-    <div class="title">{{title}}</div>
-    <div class="field editor-content">
+<div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Editor" data-controller="Editor">
+    <label class="form-label" for="input-example-1">{{title}}</label>
+    <div class="field editor-content card p-2">
         <div data-Editor-target="editor"></div>
         <textarea data-Editor-target="value" name="{{field.key}}" class="linotype-field-value" style="display:none">{{field.value}}</textarea>
     </div>
-    <div class="desc"><i>{{help}}</i></div>
+    <p class="form-help">{{help}}</p>
 </div>

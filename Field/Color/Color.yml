@@ -9,7 +9,7 @@ field:
   package:
     "simonwep/pickr": "latest"
 
-  title: Color
+  title: Label
   help: Select a color
   require: false
 
@@ -17,3 +17,4 @@ field:
     type: long_text
 
   option:
+    placeholder:

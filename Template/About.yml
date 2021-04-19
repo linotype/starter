@@ -13,13 +13,18 @@ template:
 
     title:
       block: Title
+      override:
+        text:
+          option:
+            size: xl
 
     presentation:
       block: Content
       override:
         content:
+          field: Quill
           title: Texte de présentation
           default: Hello i'm a guy without name
-
+  
     footer:
       module: Footer

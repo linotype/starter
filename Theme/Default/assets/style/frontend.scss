@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
 * { font-family: "Poppins"; }
+body{
+    padding:20px;
+}
 
-$primary-color: #333;
-$dark-color: #000;
+$primary-color: #0051ff !default;
+$primary-color-dark: darken($primary-color, 3%) !default;
+$primary-color-light: lighten($primary-color, 3%) !default;
+$secondary-color: lighten($primary-color, 37.5%) !default;
+$secondary-color-dark: darken($secondary-color, 3%) !default;
+$secondary-color-light: lighten($secondary-color, 3%) !default;
+$bg-color: #fff;
 
 @import "node_modules/spectre.css/src/spectre";
 

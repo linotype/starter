@@ -18,7 +18,7 @@ block:
       persist: meta
       option:
         placeholder: The title
-      default: The default block context value
+      default: The Title
       preview: Lorem ipusum
       js: false
     

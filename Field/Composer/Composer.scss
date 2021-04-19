@@ -1,24 +1,38 @@
+.composer-item-drag {
+  width: 20px;
+}
+
 .field--composer {
   display: relative;
 
-  
-  .composer-items-add{
-    padding: 2rem;
-    background: #5b646b;
-    .composer-item-add {
-      display: inline-block;
-      background-color: #e6e6e6;
-      color: #333;
-      padding: .3rem .6rem;
-      margin: .3rem;
-      cursor: pointer;
-      &:hover{
-        background-color: #fff;
-        color: #333;
-      }
-    }
-    
-  }
+  //new 
+
+
+
+
+
+  //old
+
+
+  // .composer-items-add {
+  //   padding: 2rem;
+  //   background: #5b646b;
+
+  //   .composer-item-add {
+  //     display: inline-block;
+  //     background-color: #e6e6e6;
+  //     color: #333;
+  //     padding: .3rem .6rem;
+  //     margin: .3rem;
+  //     cursor: pointer;
+
+  //     &:hover {
+  //       background-color: #fff;
+  //       color: #333;
+  //     }
+  //   }
+
+  // }
 
 }
 
@@ -49,36 +63,40 @@
 }
 
 .composer-item {
-  background: #33383c;
-  margin-bottom: .2rem;
+  // background: #33383c;
+  // margin-bottom: .2rem;
+
   .composer-item-toolbar {
-    position: relative;
-    background: #3e454a;
-    padding: .5rem;
-    .composer-item-title{
-      margin: 0 1.8rem;
-    color: #fff;
-      }
-    .composer-item-delete{
-      position:absolute;
-      right:0;
-      top:0;
-      padding: .5rem;
-      color:red;
-      cursor:pointer;
-      }
-      .composer-item-drag{
-        position: absolute;
-    left: 0;
-    top: 0;
-    padding: .5rem;
-    width: 1.3rem;
-    opacity: .5;
-        }
-    
+    // position: relative;
+    // background: #3e454a;
+    // padding: .5rem;
+
+    .composer-item-title {
+      // margin: 0 1.8rem;
+      // color: #fff;
+    }
+
+    .composer-item-delete {
+      // position: absolute;
+      // right: 0;
+      // top: 0;
+      // padding: .5rem;
+      // color: red;
+      // cursor: pointer;
+    }
+
+    .composer-item-drag {
+      // position: absolute;
+      // left: 0;
+      // top: 0;
+      // padding: .5rem;
+      // width: 1.3rem;
+      // opacity: .5;
+    }
+
   }
 
   .composer-item-edit {
-    padding: 2rem;
+    // padding: 2rem;
   }
 }

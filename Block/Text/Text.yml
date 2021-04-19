@@ -3,8 +3,8 @@ block:
   version: 1.2
   author: ynk
   
-  name: Title
-  desc: Create a simple title
+  name: Text
+  desc: Create a simple text content
   
   package:
 
@@ -21,8 +21,8 @@ block:
       option:
         placeholder: The title
       value: '' #TODO debug if empty
-      default: And i, from the default block context
-      preview: Lorem ipusum
+      default: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla non arcu at efficitur. Vestibulum eu sodales quam. Cras lobortis lobortis dapibus. Quisque posuere quam eu purus feugiat, id sagittis ligula ultrices. Etiam egestas eleifend nisl, non faucibus erat placerat ac. Morbi interdum condimentum magna, non accumsan enim mollis sed.
+      preview: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla non arcu at efficitur. Vestibulum eu sodales quam. Cras lobortis lobortis dapibus. Quisque posuere quam eu purus feugiat, id sagittis ligula ultrices. Etiam egestas eleifend nisl, non faucibus erat placerat ac. Morbi interdum condimentum magna, non accumsan enim mollis sed.
       
 
     margin:

@@ -9,7 +9,7 @@ field:
   package:
     "@editorjs/editorjs": "latest"
 
-  title: Editor
+  title: Label
   help: Your text
   require: false
 

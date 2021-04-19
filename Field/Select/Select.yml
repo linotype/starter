@@ -9,7 +9,7 @@ field:
   package:
     "choices.js": "latest"
 
-  title: Select
+  title: Label
   help: Choose one option
   require: false
 
