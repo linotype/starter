@@ -17,7 +17,7 @@ field:
 
   option:
     placeholder: Type your text here
-    theme: snow
+    theme: snow #snow or bubble
     p: true
     syntax: true
     toolbar: default #or pass array setting by override

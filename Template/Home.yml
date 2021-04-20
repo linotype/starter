@@ -9,22 +9,41 @@ template:
   layout:
 
     header:
+      name: Header
+      desc: Edit header information
       module: Header
 
     intro:
+      name: Introduction
+      desc: Set the introduction title
       block: Title
       override:
         text:
+          persist: meta
           name: Introduction title
           desc: Title under the menu
+          default: This is the title
+        tag:
+          persist: meta
+          default: h2
+        color:
+          persist: meta
+        # margin:
+        #   name: Test Json Editor
+        #   persist: meta
+        #   field: Json
 
-    intro2:
+    feature:
+      name: Feature
+      desc: Set the feature text
       block: Title
       override:
         text:
           default: Simple overide
 
     content:
+      name: Content
+      desc: Edit the page content
       block: Title
       override:
         text:
@@ -44,10 +63,14 @@ template:
           css: true
     
     outro:
+      name: Outro
+      desc: Edit the ending text
       block: Title
       override:
         text:
           title: Texte ligne 3
       
     footer:
+      name: Footer
+      desc: Edit the footer infos
       module: Footer

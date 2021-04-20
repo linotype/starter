@@ -2,4 +2,34 @@ linotype:
   version: 1.0
   debug: true
   preview: false
+
   theme: Default
+  
+  # roadmap:
+  #   - title: v1
+  #     desc: Home and blog
+  #     assign: Yannick Armspach
+  #     items:
+  #       - block/Title:
+  #           assign: Yannick Armspach
+  #           estimate: 1.5
+  #           start: 01/05/2021
+  #           end: 01/05/2021
+  #       - block/Nemu:
+  #           assign: Yannick Armspach
+  #           estimate: 0.25
+  #           start: 02/05/2021
+  #           end: 02/05/2021
+
+  # docs:
+  #   title: default website
+  #   desc: Documentation of the default website
+  #   intro: Lorem...
+  #   items:
+  #     - block/Title: full
+  #     - Block/Menu: full
+  #     - Template/Home: full
+  #     - Template/Article: full
+  #     - Template/Articles: full
+  #     - Helper/ArticleList: full
+

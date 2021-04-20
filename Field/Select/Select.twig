@@ -1,11 +1,13 @@
 <div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Select" data-controller="Select">
     <label class="form-label" for="input-example-1">{{title}}</label>
     <select id="select--{{field.id}}" name="{{field.key}}" class="linotype-field-value form-select">
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-        <option value="4">Option 4</option>
-        <option value="5">Option 5</option>
+        {% for key, option in data %}
+            {% if field.value %}
+                <option value="{{key}}" {{ field.value == key ? 'selected' : '' }}>{{option}}</option>
+            {% else %}
+                <option value="{{key}}" {{ field.default == key ? 'selected' : '' }}>{{option}}</option>
+            {% endif %}
+        {% endfor %}
     </select>
     <p class="form-help">{{help}}</p>
 </div>

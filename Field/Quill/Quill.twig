@@ -1,6 +1,8 @@
 <div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Quill" data-controller="Quill">
     <label class="form-label" for="input-example-1">{{title}}</label>
-    <div data-Quill-target="editor">{{field.value|raw}}</div>
+    <div data-Quill-target="editor_container">
+        <div data-Quill-target="editor">{{field.value|raw}}</div>
+    </div>
     <textarea style="display:none" data-Quill-target="value" class="linotype-field-value form-input" name="{{field.key}}" placeholder="{{placeholder}}">{{field.value|raw}}</textarea>
     <p class="form-help">{{help}}</p>
 </div>

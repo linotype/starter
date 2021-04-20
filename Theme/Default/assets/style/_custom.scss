@@ -5,6 +5,10 @@ body{
 .off-canvas .off-canvas-content {
     padding: 0;
 }
+.off-canvas .off-canvas-sidebar {
+    overflow: visible;
+    min-width: inherit;
+}
 
 .col-auto {
     max-width: 100%;
@@ -20,6 +24,8 @@ body{
     padding: 0.6rem 1.4rem 3.6rem 1.4rem;
     overflow-y: auto;
     min-width: 500px;
+    position: relative;
+    max-width: 800px;
 }
 
 .logo {
@@ -82,30 +88,51 @@ body{
     }
 }
 
-.toolbar.minimize {
+.toolbar {
     overflow: visible;
-    min-width: 75px;
-    width: 75px;
-    .panel{
+    #toolbar-switch {
+        position: absolute;
+        right: -.3rem;
+        top: 1.5rem;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .tooltip::after {
+        display: none;
+    }
+    #toolbar-switch:checked + .panel {
+        min-width: 75px;
+        width: 75px;
         overflow: visible;
+
         .panel-head {
             overflow: hidden;
         }
-        .panel-body{
+
+        .panel-body {
             overflow: visible;
         }
-    }
-    .logo-text{
-        display:none;
-    }
-    .menu-item-title {
-        display:none;
-    }
-    .menu {
-        padding: 0;
-        min-width: inherit;
-        .menu-item > a {
-            margin: 0 -0.2rem;
+
+        .logo-text {
+            display: none;
+        }
+
+        .menu-item-title {
+            display: none;
+        }
+
+        .menu {
+            padding: 0;
+            min-width: inherit;
+
+            .menu-item > a {
+                margin: 0 -0.2rem;
+            }
+            .tooltip::after {
+                display: block;
+            }
         }
     }
 }
@@ -124,4 +151,10 @@ body{
     color: #bcc3ce;
     font-size: .7rem;
     margin-top: .2rem;
+}
+
+.notif {
+    position: absolute;
+    top:1rem;
+    right: 1rem;
 }

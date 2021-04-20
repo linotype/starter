@@ -25,7 +25,7 @@ block:
     tag:
       name: Tag
       desc: Define the title tag
-      field: Text
+      field: Select
       persist: static
       option:
         data:
@@ -45,10 +45,10 @@ block:
     color:
       name: Couleur du titre
       desc: 
-      field: Text
+      field: Color
       persist: static
       default: '#bdbdbd'
-      css: false
+      css: true
       js: false
 
     margin:

@@ -12,7 +12,7 @@ export default class extends Controller {
 
   static get targets() 
   {
-    return [ "editor", "value" ]
+    return [ "editor", "editor_container", "value" ]
   }
 
   static get values() 
@@ -92,6 +92,7 @@ export default class extends Controller {
       this.update();
     });
     this.element.style.visibility = "visible";
+    
   }
 
   update() 
@@ -110,6 +111,14 @@ export default class extends Controller {
     }
 
     this.valueTarget.value = this.contents;
+  }
+
+  disconnect() 
+  { 
+    this.editor_containerTarget.querySelector('.ql-toolbar').remove()
+    this.quill.destroy()
+    this.quill = undefined
+    
   }
 
 }
