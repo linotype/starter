@@ -12,7 +12,7 @@ block:
   context: 
 
     text:
-      name: Text du titre
+      name: Text
       desc: 
       field: Text
       persist: meta
@@ -24,7 +24,7 @@ block:
     
     tag:
       name: Tag
-      desc: Define the title tag
+      desc: Define the title tag for SEO
       field: Select
       persist: static
       option:
@@ -43,7 +43,7 @@ block:
       js: false
 
     color:
-      name: Couleur du titre
+      name: Color
       desc: 
       field: Color
       persist: static
@@ -52,7 +52,7 @@ block:
       js: false
 
     margin:
-      name: Marge du titre
+      name: Margin
       desc: 
       field: Text
       persist: static
@@ -61,7 +61,7 @@ block:
       js: false
 
     font_size:
-      name: Taille du titre
+      name: Size
       desc: 
       field: Text
       persist: static

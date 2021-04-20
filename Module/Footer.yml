@@ -9,6 +9,8 @@ module:
   layout:
 
     footer:
+      title: Footer
+      help: Change the footer title
       block: Container
       children:
         col-1:
@@ -18,7 +20,7 @@ module:
               block: Title
               override:
                 text: 
-                  value: Footer
+                  default: Footer
         col-2:
           block: Container
           children:

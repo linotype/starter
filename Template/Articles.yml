@@ -15,7 +15,7 @@ template:
       block: Menu
       override:
         items:
-          value:  
+          default:  
             all:
               name: All
               path: /articles
@@ -32,7 +32,7 @@ template:
         text:
           field: Text
           persist: static
-          value: ARTICLES
+          default: ARTICLES
 
     footer:
       module: Footer

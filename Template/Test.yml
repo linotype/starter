@@ -9,17 +9,21 @@ template:
   layout:
       
     title:
+      title: About title
       block: Title
       override:
         text: 
-          value: Titre simple
+          title: ''
+          default: Titre simple
+          option:
+            size: xl
         tag:
-          value: h1
+          default: h1
         font_size:
-          value: 3rem
+          default: 3rem
           css: true
         color:
-          value: green
+          default: green
           css: true
 
     test:
@@ -29,15 +33,17 @@ template:
       block: Menu
           
     test2:
+      title: Stress test
+      help: Add many children with meta
       block: Container
       children:
         child-1:
           block: Title
           override:
             text: 
-              value: Block 1
+              default: Block 1
             tag:
-              value: h1
+              default: h1
         child-2:
           block: Container
           children:
@@ -57,12 +63,12 @@ template:
                       block: Title
                       override:
                         text: 
-                          value: Block 1c
+                          default: Block 1c
                     1:
                       block: Title
                       override: 
                         text: 
-                          value: Block 1c
+                          default: Block 1c
 
                     test2:
                       block: Container
@@ -71,7 +77,7 @@ template:
                           block: Title
                           override:
                             text: 
-                              value: Block 1
+                              default: Block 1
                         1:
                           block: Container
                           children:
@@ -81,7 +87,7 @@ template:
                               block: Title
                               override: 
                                 text: 
-                                  value: Block 2a
+                                  default: Block 2a
                             2:
                               block: Container
                               children:
@@ -89,7 +95,7 @@ template:
                                   block: Title
                                   override:
                                     text: 
-                                      value: Block 1b
+                                      default: Block 1b
                                 1:
                                   block: Container
                                   children:
@@ -97,12 +103,12 @@ template:
                                       block: Title
                                       override:
                                         text: 
-                                          value: Block 1c
+                                          default: Block 1c
                                     1:
                                       block: Title
                                       override: 
                                         text: 
-                                          value: Block 1c
+                                          default: Block 1c
 
                                     test2:
                                       block: Container
@@ -111,7 +117,7 @@ template:
                                           block: Title
                                           override:
                                             text: 
-                                              value: Block 1
+                                              default: Block 1
                                         1:
                                           block: Container
                                           children:
@@ -121,7 +127,7 @@ template:
                                               block: Title
                                               override: 
                                                 text: 
-                                                  value: Block 2a
+                                                  default: Block 2a
                                             2:
                                               block: Container
                                               children:
@@ -134,43 +140,43 @@ template:
                                                       block: Title
                                                       override:
                                                         text: 
-                                                          value: Block 1c
+                                                          default: Block 1c
                                                         font_size:
-                                                          value: 3rem
+                                                          default: 3rem
                                                         color:
-                                                          value: red
+                                                          default: red
                                                     1:
                                                       block: Title
                                                       override: 
                                                         text: 
-                                                          value: Block 1c
+                                                          default: Block 1c
                                                 2:
                                                   block: Title
                                                   override:
                                                     text: 
-                                                      value: Block 2b
+                                                      default: Block 2b
 
                                         2:
                                           block: Title
                                           override:
                                             text: 
-                                              value: Block 2
+                                              default: Block 2
                                 2:
                                   block: Title
                                   override:
                                     text: 
-                                      value: Block 2b
+                                      default: Block 2b
 
                         2:
                           block: Title
                           override:
                             text: 
-                              value: Block 2
+                              default: Block 2
                 2:
                   block: Title
                   override:
                     text: 
-                      value: Block 2b
+                      default: Block 2b
 
         child-3:
           block: Container
@@ -179,7 +185,7 @@ template:
               block: Title
               override:
                 text: 
-                  value: Block 1
+                  default: Block 1
             1:
               block: Container
               children:
@@ -189,7 +195,7 @@ template:
                   block: Title
                   override: 
                     text: 
-                      value: Block 2a
+                      default: Block 2a
                 2:
                   block: Container
                   children:
@@ -197,7 +203,7 @@ template:
                       block: Title
                       override:
                         text: 
-                          value: Block 1b
+                          default: Block 1b
                     1:
                       block: Container
                       children:
@@ -205,12 +211,12 @@ template:
                           block: Title
                           override:
                             text: 
-                              value: Block 1c
+                              default: Block 1c
                         1:
                           block: Title
                           override: 
                             text: 
-                              value: Block 1c
+                              default: Block 1c
 
                         test2:
                           block: Container
@@ -219,7 +225,7 @@ template:
                               block: Title
                               override:
                                 text: 
-                                  value: Block 1
+                                  default: Block 1
                             1:
                               block: Container
                               children:
@@ -229,7 +235,7 @@ template:
                                   block: Title
                                   override: 
                                     text: 
-                                      value: Block 2a
+                                      default: Block 2a
                                 2:
                                   block: Container
                                   children:
@@ -237,7 +243,7 @@ template:
                                       block: Title
                                       override:
                                         text: 
-                                          value: Block 1b
+                                          default: Block 1b
                                     1:
                                       block: Container
                                       children:
@@ -247,7 +253,7 @@ template:
                                           block: Title
                                           override:
                                             text: 
-                                              value: Block 1c
+                                              default: Block 1c
                                         2:
                                           block: Slider
 
@@ -258,7 +264,7 @@ template:
                                               block: Title
                                               override:
                                                 text: 
-                                                  value: Block 1
+                                                  default: Block 1
                                             1:
                                               block: Container
                                               children:
@@ -268,7 +274,7 @@ template:
                                                   block: Title
                                                   override: 
                                                     text: 
-                                                      value: Block 2a
+                                                      default: Block 2a
                                                 2:
                                                   block: Container
                                                   children:
@@ -276,7 +282,7 @@ template:
                                                       block: Title
                                                       override:
                                                         text: 
-                                                          value: Block 1b
+                                                          default: Block 1b
                                                     1:
                                                       block: Container
                                                       children:
@@ -284,51 +290,51 @@ template:
                                                           block: Title
                                                           override:
                                                             text: 
-                                                              value: Block 1c
+                                                              default: Block 1c
                                                         1:
                                                           block: Title
                                                           override: 
                                                             text: 
-                                                              value: Block 1c
+                                                              default: Block 1c
                                                     2:
                                                       block: Title
                                                       override:
                                                         text: 
-                                                          value: Block 2b
+                                                          default: Block 2b
 
                                             2:
                                               block: Title
                                               override:
                                                 text: 
-                                                  value: Block 2
+                                                  default: Block 2
                                     2:
                                       block: Title
                                       override:
                                         text: 
-                                          value: Block 2b
+                                          default: Block 2b
 
                             2:
                               block: Title
                               override:
                                 text: 
-                                  value: Block 2
+                                  default: Block 2
                     2:
                       block: Title
                       override:
                         text: 
-                          value: Block 2b
+                          default: Block 2b
 
             2:
               block: Title
               override:
                 text: 
-                  value: Block 2
+                  default: Block 2
                   
         child-4:
           block: Title
           override:
             text: 
-              value: Block 2
+              default: Block 2
     
     
 
@@ -336,7 +342,7 @@ template:
     #   block: RenderBlocks
     #   override:
     #     blocks:
-    #       value: 
+    #       default: 
     #         sub_content_1:
     #           block: Title
     #           context:

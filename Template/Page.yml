@@ -20,7 +20,7 @@ template:
         text:
           field: Text
           persist: static
-          value: Me too, from template static override !
+          default: Me too, from template static override !
     
     outro:
       block: Title

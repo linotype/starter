@@ -17,7 +17,7 @@ template:
         text:
           field: Text
           persist: static
-          value: FORM
+          default: FORM
 
     footer:
       module: Footer
