@@ -30,6 +30,13 @@ template:
           persist: meta
 
 
+    # preset_test:
+    #   title: Title preset test
+    #   help: test the preset block override
+    #   block: Content
+    #   preset: big_red_h1
+       
+
     json_test:
       title: Json Schema editor
       help: test json schema editor

@@ -20,11 +20,11 @@ template:
               name: All
               path: /articles
             home:
-              name: Article 1
-              path: /article/01
+              name: Article 4
+              path: /article/4
             contact:
-              name: Article 2
-              path: /article/02
+              name: Article 7
+              path: /article/7
 
     form:
       block: Title

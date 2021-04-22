@@ -68,3 +68,31 @@ block:
       value: 2rem
       css: true
       js: false
+
+  # preset:
+
+  #     big_red_h1:
+  #       tag:
+  #         value: h1
+  #       color:
+  #         value: red
+  #       font_size:
+  #         value: 6rem
+
+  #   h1_static:
+  #     text:
+  #       persist: static
+  #     tag:
+  #       value: h1
+
+  #   full_meta:
+  #     text:
+  #       persist: meta
+  #     tag:
+  #       persist: meta
+  #     color:
+  #       persist: meta
+  #     margin:
+  #       persist: meta
+  #     font_size:
+  #       persist: meta

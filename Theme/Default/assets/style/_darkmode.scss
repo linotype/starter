@@ -1,0 +1,39 @@
+body {
+    background: #242629;
+    color: #969696;
+}
+
+.panel {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.logo-text path {
+    fill: #888 !important;
+}
+
+.off-canvas .off-canvas-sidebar,
+.card {
+    background: #242629;
+}
+
+* {
+    border-color: #444 !important;
+}
+
+input,
+textarea,
+select {
+    background: #242629 !important;
+    color: #969696 !important;
+}
+
+.scroll-shadow-cover-top,
+.scroll-shadow-cover-bottom {
+    background: #242629;
+}
+
+.viewer {
+    background-image: linear-gradient(45deg, #000 25%, transparent 25%), linear-gradient(-45deg, #000 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #000 75%), linear-gradient(-45deg, transparent 75%, #000 75%);
+}

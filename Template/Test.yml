@@ -244,6 +244,8 @@ template:
                                       override:
                                         text: 
                                           default: Block 1b
+                                        color:
+                                          persist: meta
                                     1:
                                       block: Container
                                       children:

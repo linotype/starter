@@ -41,7 +41,7 @@ body{
         }
         .panel-header {
             padding: .98rem;
-            border-bottom: 0.05rem dashed #dadee4;
+            border-bottom: 0.05rem solid #dadee4;
         }
         .panel-nav {
             
@@ -52,11 +52,14 @@ body{
                 padding: 1.2rem 2rem 2rem 2rem;
                 border-bottom: 1px dashed #e4e7eb;
             }
+            .panel-block:last-child {
+                border-bottom: none!important;
+            }
         }
         
         .panel-footer {
             padding: .98rem;
-            border-top: 0.05rem dashed #dadee4;
+            border-top: 0.05rem solid #dadee4;
         }
     }
     @media screen and (max-width:960px) {

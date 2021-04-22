@@ -20,15 +20,32 @@ template:
               name: All
               path: /articles
             home:
-              name: Article 1
-              path: /article/01
+              name: Article 4
+              path: /article/4
             contact:
-              name: Article 2
-              path: /article/02
+              name: Article 7
+              path: /article/7
+
+    title:
+      block: Title
+      override:
+        text:
+          option:
+            size: xl
+        tag: 
+          default: h1
 
     slider:
       block: Slider
       
+    presentation:
+      block: Content
+      override:
+        content:
+          field: Quill
+          title: Texte de présentation
+          default: Hello i'm a guy without name
+
     form:
       block: Title
       override:

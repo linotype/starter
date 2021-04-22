@@ -19,7 +19,7 @@ class Composer extends AbstractController
 
         $blocks = [];
 
-        $items = json_decode( $items, true );
+        $items = $items;
 
         foreach( $items as $item ) {
             
@@ -44,7 +44,7 @@ class Composer extends AbstractController
 
         $blocks = [];
 
-        $items = json_decode( $items, true );
+        // $items = $items;
 
         foreach( $items as $item ) {
             $blocks[] = $item;

@@ -1,18 +1,119 @@
 .h-100 {
     height: 100%;
 }
+
 .oy {
     overflow-y: auto;
 }
+
 .ox {
     overflow-x: auto;
 }
+
 .vh {
     height: 100vh;
 }
-.c-default{
+
+.c-default {
     cursor: default;
 }
-.mb-20{
+
+.mb-20 {
     margin-bottom: 2rem;
+}
+
+
+.card-list {
+    .card {
+        border-left:none;
+        border-top:none;
+        border-right:none;
+        border-radius: 0;
+    }
+}
+
+.scroll-shadow-overlay {
+    position: relative;
+}
+
+.scroll-shadow-content {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.scroll-shadow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.scroll-shadow-shadow {
+    position: absolute;
+    z-index: 1;
+}
+
+.scroll-shadow-top-radial {
+    top: 0;
+    left: 0;
+    Background: radial-gradient(farthest-side at 50% 0%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)) 100% 0;
+    background-repeat: no-repeat;
+    background-size: 110% 5px;
+    width: inherit;
+    height: 7px;
+}
+
+.scroll-shadow-bottom-radial {
+    bottom: 0;
+    left: 0;
+    Background: radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 110% 5px;
+    width: inherit;
+    height: 7px;
+}
+
+.scroll-shadow-top-linear {
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(255, 255, 255, 0)) 100% 0;
+    background-repeat: no-repeat;
+    background-size: 100% 5px;
+    width: inherit;
+    height: 6px;
+}
+
+.scroll-shadow-bottom-linear {
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1) 90%) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 5px;
+    width: inherit;
+    height: 6px;
+}
+
+.scroll-shadow-cover-top {
+    float: top;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(#fff 30%, rgba(255, 255, 255, 0)) 100% 0;
+    background-size: 100% 12px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+
+.scroll-shadow-cover-bottom {
+    float: bottom;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), #fff 70%) 0 100%;
+    background-size: 100% 12px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
 }
