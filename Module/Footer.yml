@@ -21,6 +21,7 @@ module:
               override:
                 text: 
                   default: Footer
+                  persist: static
         col-2:
           block: Container
           children:
