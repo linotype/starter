@@ -1,0 +1,14 @@
+block:
+
+  version: 1.2
+  author: linotype
+  
+  name: Articles
+  desc: Get list off articles
+  
+  parent: all
+  accept: all
+
+  context: 
+
+    

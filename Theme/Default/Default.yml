@@ -26,9 +26,14 @@ theme:
       desc: Present yourself
       icon: '@Linotype/Icons/user.svg'
       public: true
-      path: /about
+      path: /about-linotype
       template: About
       type: page
+      # type: post
+      # preview:
+      #   title: title__text
+      #   info: #title__tag
+      #   desc: #presentation__content
       view: true
       edit: true
       delete: false
@@ -55,6 +60,10 @@ theme:
       path: /article/{id}
       template: Article
       type: post
+      preview:
+        title: title__text
+        info: #title__tag
+        desc: #presentation__content
       view: true
       edit: true
       delete: false
@@ -84,6 +93,19 @@ theme:
       public: false
       path: /test
       template: Test
+      type: page
+      view: true
+      edit: true
+      delete: false
+      create: false
+
+    stats:
+      name: Stats
+      desc: Create statistic page
+      icon: '@Linotype/Icons/alert-circle.svg'
+      public: false
+      path: /stats
+      template: Stats
       type: page
       view: true
       edit: true

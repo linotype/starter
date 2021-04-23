@@ -1,0 +1,9 @@
+{% set items = linotype( 'helper', 'Query.templates', { 'id': 'article' } ) %}
+
+<div data-block-id="{{block.uid}}" id="{{block.id}}" class="{{block.class}}">
+  <ul>
+  {% for item in items %}
+    <li><a href="{{item.link}}">{{item.data.title.text}}</a></li>
+  {% endfor %}
+  </ul>
+</div>
