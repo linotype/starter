@@ -263,7 +263,7 @@ template:
                                           block: Container
                                           children:
                                             0:
-                                              block: Title
+                                              block: Chart
                                               override:
                                                 text: 
                                                   default: Block 1

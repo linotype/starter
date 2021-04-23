@@ -1,0 +1,18 @@
+template:
+
+  version: 1.0
+  author: ynk
+
+  name: Stats
+  desc: Simple statistic page
+
+  layout:
+
+    header:
+      module: Header
+
+    slider:
+      block: Chart
+      
+    footer:
+      module: Footer

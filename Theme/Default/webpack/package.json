@@ -9,6 +9,7 @@
     "@simonwep/pickr": "^1.8.0",
     "@stimulus/polyfills": "^2.0.0",
     "body-scroll-lock": "^3.1.5",
+    "chart.js": "^3.1.1",
     "choices.js": "^9.0.1",
     "dragula": "^3.7.3",
     "feather-icons": "^4.28.0",

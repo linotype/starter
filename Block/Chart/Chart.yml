@@ -1,0 +1,24 @@
+block:
+
+  version: 1.2
+  author: linotype
+  
+  name: Chart
+  desc: Create a chart
+  
+  parent: all
+  accept: all
+
+  context: 
+
+    # text:
+    #   name: Text
+    #   desc: 
+    #   field: Text
+    #   persist: meta
+    #   option:
+    #     placeholder: The title
+    #   default: The Title
+    #   preview: Lorem ipusum
+    #   js: false
+    
