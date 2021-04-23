@@ -3,6 +3,8 @@
 namespace Linotype\Helper\Menu;
 
 use Linotype\Bundle\LinotypeBundle\Core\Linotype;
+use Linotype\Bundle\LinotypeBundle\Repository\LinotypeMetaRepository;
+use Linotype\Bundle\LinotypeBundle\Repository\LinotypeTemplateRepository;
 use Linotype\Helper\Menu\MenuHelper;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
@@ -10,61 +12,28 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class MenuService extends AbstractController
 {
 
-    public function __construct( Linotype $linotype, MenuHelper $helper ){
+    public function __construct( Linotype $linotype, LinotypeTemplateRepository $templateRepo, LinotypeMetaRepository $metaRepo, MenuHelper $helper ){
         $this->linotype = $linotype;
+        $this->config = $this->linotype->getConfig();
+        $this->current = $this->config->getCurrent();
+        $this->theme = $this->current->getTheme();
+        $this->map = $this->theme ? $this->theme->getMap() : [];
+        $this->blocks = $this->config->getBlocks();
+        $this->templates = $this->config->getTemplates();
+        $this->templateRepo = $templateRepo;
         $this->helper = $helper;
-        
     }
 
     public function getMenuItems( $context = [] )
     {
-        
-        $this->linotype->log('MenuService from bundle');
-
-        //return static items if exist
-        if ( isset( $context['items'] ) && ! empty( $context['items'] ) ) {
-            return $context['items'];
+        $menu = [];
+        foreach( $this->map as $menu_id => $menu_value ) {
+            $menu[ $menu_id ] = [
+                'name' => $menu_value['name'],
+                'path' => $menu_value['path'],
+            ];
         }
-
-        //return preset if menu_id exist
-        if ( isset( $context['menu_id'] ) ) {
-            switch ( $context['menu_id'] ) {
-
-                case 'admin':
-                    return [
-                        'home' => [
-                            'name' => $this->helper->format('home'),
-                            'path' => '/',
-                        ],
-                        'about' => [
-                            'name' => 'About',
-                            'path' => '/about',
-                        ],
-                        'articles' => [
-                            'name' => 'Articles',
-                            'path' => '/articles',
-                        ],
-                        'test' => [
-                            'name' => 'Test',
-                            'path' => '/test',
-                        ],
-                        'contact' => [
-                            'name' => 'Contact',
-                            'path' => '/contact',
-                        ],
-                    ];
-                    break;
-                
-                case 'loggedin':
-                    return [];
-                    break;
-
-                case 'loggedout':
-                    return [];
-                    break;
-            }
-        }
-    
+        return $menu;
     }
 
 }
