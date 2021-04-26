@@ -37,7 +37,7 @@ export default class extends Controller {
     }
 
     this.options = {
-      placeholder: data.placeholder,
+      placeholder: this.valueTarget.getAttribute('placeholder').replace(/(<([^>]+)>)/gi, ""),
       theme: data.theme,
       p: data.p,
       modules: {
@@ -88,6 +88,11 @@ export default class extends Controller {
     Quill.register('modules/clipboard', PlainClipboard, true)
     
     this.quill = new Quill( this.editorTarget, this.options );
+    
+    this.quill.clipboard.dangerouslyPasteHTML(this.valueTarget.value);
+    
+    this.quill.blur();
+
     this.quill.on('text-change', () => {
       this.update();
     });

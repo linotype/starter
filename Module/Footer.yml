@@ -29,7 +29,7 @@ module:
               block: Title
               override:
                 text:
-                  field: Textarea
+                  field: Quill
                   persist: option
                   default: powered by linotype - <a href="https://docs.linotype.dev" target="_blank">docs</a> - <a href="/linotype">linotype</a> - <a href="/admin">admin</a>
                 font_size:
