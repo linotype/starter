@@ -68,7 +68,7 @@ export default class extends Controller {
     });
     this.itemsTarget.querySelectorAll('.composer-item-delete').forEach(item => {
       item.addEventListener('click', event => {
-        this.delete( event.target.parentNode.parentNode );
+        this.delete( event.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode );
         this.update();
       });
     })

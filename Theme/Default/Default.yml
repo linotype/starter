@@ -113,7 +113,7 @@ theme:
       create: false
 
     composer:
-      name: Composer
+      name: Compose
       desc: Simple test page for composer
       icon: '@Linotype/Icons/file-plus.svg'
       public: false

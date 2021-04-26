@@ -48,7 +48,7 @@
     </div>
 
 
-    <textarea data-Composer-target="value" class="linotype-field-value form-input" name="{{field.key}}" rows="20">{{field.value}}</textarea>
+    <textarea data-Composer-target="value" class="linotype-field-value form-input" name="{{field.key}}" rows="20" style="display:none">{{field.value|json_encode()}}</textarea>
     <span class="form-help">{{help}}</span>
 </div>
 
