@@ -21,7 +21,7 @@ module:
               override:
                 text: 
                   default: Footer
-                  persist: static
+                  persist: both
         col-2:
           block: Container
           children:
@@ -29,11 +29,11 @@ module:
               block: Title
               override:
                 text:
-                  field: Text
-                  persist: static
-                  value: powered by linotype - <a href="https://docs.linotype.dev" target="_blank">docs</a> - <a href="/linotype">linotype</a> - <a href="/admin">admin</a>
+                  field: Textarea
+                  persist: option
+                  default: powered by linotype - <a href="https://docs.linotype.dev" target="_blank">docs</a> - <a href="/linotype">linotype</a> - <a href="/admin">admin</a>
                 font_size:
-                  value: .7rem
+                  default: .7rem
           
 
 

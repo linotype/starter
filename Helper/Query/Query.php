@@ -32,7 +32,7 @@ class Query extends AbstractController
             foreach( $template_ids as $template ) {
 
                 $templateObject = $this->templates->findById( $this->map[ $template->getTemplateKey() ]['template'] );
-                $blocks = $this->current->render( $templateObject, $template->getId() );
+                $blocks = $this->current->renderTemplate( $templateObject, $template->getId() );
                 $templates[ $template->getId() ] = [
                     'id' => $template->getId(),
                     'link' => str_replace('{id}', $template->getId(), $this->map[ $template->getTemplateKey() ]['path'] ),

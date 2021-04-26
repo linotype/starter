@@ -9,21 +9,23 @@ module:
   layout:
 
     sitename:
+      title: Header
+      help: Change the website title
       block: Title
       override:
         text:
           title: Website title 
           field: Text
           persist: option
-          value: Linotype
+          default: Linotype
         tag:
-          value: h1
+          default: h1
         font_size:
-          value: 2rem
+          default: 2rem
           css: true
           js: true
         margin:
-          value: 0rem
+          default: 0rem
           css: true
         color:
           title: Couleur du titre du site
