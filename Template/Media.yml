@@ -8,6 +8,11 @@ template:
 
   layout:
 
+    header:
+      title: Header
+      help: Edit header information
+      module: Header
+      
     title:
       title: Title
       block: Title

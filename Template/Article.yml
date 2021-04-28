@@ -22,6 +22,12 @@ template:
         tag: 
           default: h1
 
+    image:
+      block: Image
+      override:
+        size: 
+          default: big
+          
     # slider:
     #   block: Slider
       

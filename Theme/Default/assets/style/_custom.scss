@@ -20,14 +20,17 @@ body{
     padding: 0.35rem 0.48em;
 }
 
-// .page {
-//     padding: 0.6rem 1.4rem 3.6rem 1.4rem;
-//     overflow-y: auto;
-//     min-width: 500px;
-//     position: relative;
-//     max-width: 800px;
-//     border-right: #dadee4 1px solid;
-// }
+.hero-center {
+    height: 100%;
+    justify-content: center;
+}
+.hero {
+    .hero-body.hero-body-large {
+        width: 300px;
+        margin: 6rem;
+    }
+}
+
 .off-canvas-content {
     .panel {
         border-left: none;

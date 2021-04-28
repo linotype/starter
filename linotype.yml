@@ -3,6 +3,12 @@ linotype:
   debug: true
   preview: false
 
+  # admin:
+  #   username: ynk
+  #   firstname: Yannick
+  #   lastname: Armspach
+  #   email: yannick.armspach@gmail.com
+
   theme: Default
   
   # roadmap:
