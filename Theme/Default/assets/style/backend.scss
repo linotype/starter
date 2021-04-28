@@ -22,3 +22,24 @@ $bg-color: #fff;
 @import "_custom";
 
 // @import "_darkmode";
+
+
+.scroll-shadow-content {
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.scroll-shadow-content::-webkit-scrollbar-track
+{
+	background-color: $secondary-color;
+}
+
+.scroll-shadow-content::-webkit-scrollbar
+{
+	width: .2rem;
+	background-color: $secondary-color;
+}
+
+.scroll-shadow-content::-webkit-scrollbar-thumb
+{
+	background-color: $primary-color;
+}

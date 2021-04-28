@@ -12,7 +12,7 @@ template:
       title: Header
       help: Edit header information
       module: Header
-
+    
     intro:
       title: Introduction
       help: Set the introduction title
@@ -28,6 +28,16 @@ template:
           default: h2
         color:
           persist: meta
+
+    image:
+      title: Image en avant
+      block: Image
+      override:
+        src:
+          title: ''
+
+
+      
 
 
     # preset_test:

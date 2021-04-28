@@ -1,5 +1,11 @@
 <div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Title" data-controller="Title">
     <label class="form-label" for="input-example-1">{{title}}</label>
-    <input type="file" class="linotype-field-value form-input" name="{{field.key}}" placeholder="{{placeholder}}" value="{{field.value}}">
+    <input type="file" class="linotype-field-file form-input mb-2" name="{{field.key}}">
+    <div class="input-group">
+        <span class="input-group-addon">ID</span>
+        <input type="text" class="linotype-field-value form-input" name="{{field.key}}" placeholder="image id" value="{{field.value}}">
+    </div>
     <span class="form-help">{{help}}</span>
+    {% set image = linotype('helper','File.getFile', { id: field.value } ) %}
+    <img src="{{image.src}}" class="mt-2" width="200px"/>
 </div>

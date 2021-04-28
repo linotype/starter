@@ -1,0 +1,14 @@
+helper:
+
+  version: 1.0
+  author: ynk
+  
+  name: File
+  desc: Get file info from id
+  
+  methode:
+
+    getFile:
+      name: Get file data
+      desc: Return file infos 
+      controller: Linotype\Helper\File\File::getFile

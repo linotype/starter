@@ -1,0 +1,20 @@
+template:
+
+  version: 1.0
+  author: ynk
+
+  name: Media
+  desc: Media test page
+
+  layout:
+
+    title:
+      title: Title
+      block: Title
+
+    image:
+      title: Upload test
+      block: Image
+      override:
+        src:
+          title: ''

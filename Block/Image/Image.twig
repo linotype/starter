@@ -1,0 +1,4 @@
+{% set image = linotype('helper','File.getFile', { id: src } ) %}
+<div data-block-id="{{block.uid}}" id="{{block.id}}" class="{{block.class}}">
+  <img class="{{size}}" src="{{image.src}}" width="100%"/>
+</div>

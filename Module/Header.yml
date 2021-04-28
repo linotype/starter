@@ -8,6 +8,17 @@ module:
 
   layout:
 
+    logo:
+      title: Logo
+      help: Set the website logo
+      block: Image
+      override:
+        src:
+          title: Logo file (.png)
+          persist: option
+        size:
+          default: small
+
     sitename:
       title: Header
       help: Change the website title
@@ -30,7 +41,7 @@ module:
         color:
           title: Couleur du titre du site
           field: Color
-          default: red
+          default: black
           css: true
           js: true
           

@@ -89,9 +89,9 @@ export default class extends Controller {
     
     this.quill = new Quill( this.editorTarget, this.options );
     
-    this.quill.clipboard.dangerouslyPasteHTML(this.valueTarget.value);
+    // this.quill.clipboard.dangerouslyPasteHTML(this.valueTarget.value);
     
-    this.quill.blur();
+    // this.quill.blur();
 
     this.quill.on('text-change', () => {
       this.update();
