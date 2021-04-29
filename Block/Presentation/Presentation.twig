@@ -1,0 +1,11 @@
+<div data-block-id="{{block.uid}}" id="{{block.id}}" class="{{block.class}}" data-controller="Presentation">
+  <div class="content">  
+      <div data-Presentation-target="reveal" class="reveal">  
+        <div class="slides">
+          <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
+            <textarea data-template>{{content|raw}}</textarea>
+          </section>
+        </div>
+      </div>
+    </div>
+</div>

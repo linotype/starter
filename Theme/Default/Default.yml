@@ -112,6 +112,19 @@ theme:
       delete: false
       create: false
 
+    presentation:
+      name: Presentation
+      desc: Presentation page
+      icon: '@Linotype/Icons/eye.svg'
+      public: true
+      path: /presentation
+      template: Presentation
+      type: page
+      view: true
+      edit: true
+      delete: false
+      create: false
+
     stats:
       name: Stats
       desc: Create statistic page

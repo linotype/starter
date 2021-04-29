@@ -1,0 +1,20 @@
+field:
+
+  version: 1.0
+  author: linotype
+  
+  name: Markdown
+  desc: Markdown editor
+
+  title: Label
+  help: Enter your text
+  require: false
+
+  format:
+    type: string
+    max_lenght: LONG_TEXT
+    min_lenght: 0
+
+  option:
+    placeholder: Type your text here
+    

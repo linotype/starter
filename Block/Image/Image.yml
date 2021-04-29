@@ -20,6 +20,7 @@ block:
         placeholder: Image link
       default: ''
       preview: ''
+      # role: seo
 
     size:
       name: Size

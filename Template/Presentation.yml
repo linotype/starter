@@ -1,0 +1,28 @@
+template:
+
+  version: 1.0
+  author: ynk
+
+  name: Presentation
+  desc: Create fullscreen presentation
+
+  layout:
+
+    slides:
+      title: Presentation contents
+      help: Create your presentation with markdown
+      block: Presentation
+      override:
+        content:
+          desc: '<h5>Help:</h5>
+            <ul>
+              <li>Create new slide with <b>---</b></li>
+              <li>Create vertical slide with <b>--</b></li>
+            </ul>'
+
+    # slides2:
+    #   title: Slides2
+    #   block: Presentation
+    #   override:
+    #     controls:
+    #       default: 'false'

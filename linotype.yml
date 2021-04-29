@@ -3,6 +3,7 @@ linotype:
   debug: true
   preview: false
 
+  # define super admin user
   # admin:
   #   username: ynk
   #   firstname: Yannick

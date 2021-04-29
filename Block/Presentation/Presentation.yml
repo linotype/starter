@@ -1,0 +1,47 @@
+block:
+
+  version: 1.2
+  author: ynk
+  
+  name: Presentation
+  desc: Create a presentation slides from Markdown text
+  
+  package:
+
+  parent: all
+  accept: all
+
+  context: 
+
+    content:
+      name: ''
+      desc: ''
+      field: Markdown
+      persist: meta
+    
+    fullscreen:
+      name: Fullscreen
+      field: Switch
+    
+    controls:
+      default: true
+      js: true
+
+    #todo dynamicaly load custom theme
+    theme:
+      name: Theme
+      field: Select
+      default: white
+      option:
+        data:
+          white: White - White background, black text, blue links
+          black: Black - Black background, white text, blue links
+          league: league - Gray background, white text, blue links
+          beige: Beige - Beige background, dark text, brown links
+          sky: Sky - Blue background, thin dark text, blue links
+          night: Night - Black background, thick white text, orange links
+          serif: Serif - Cappuccino background, gray text, brown links
+          simple: Simple - White background, black text, blue links
+          solarized: Solarized - Cream-colored background, dark green text, blue links
+          blood: Blood - Dark background, thick white text, red links
+          moon: Moon - Dark blue background, thick grey text, blue links
