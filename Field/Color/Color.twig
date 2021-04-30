@@ -1,8 +1,8 @@
 <div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Color" data-controller="Color">
-    <label class="form-label" for="input-example-1">{{title}}</label>
+    {% if title %}<label class="form-label">{{title}}</label>{% endif %}
     <div class="input-group">
         <div class="input-group-addon addon-sm"><div class="color-picker--{{field.id}}"></div></div>
         <input id="color-picker-value--{{field.id}}" class="linotype-field-value form-input" name="{{field.key}}" placeholder="{{placeholder}}" value="{{field.value}}">
     </div>
-    <span class="form-help">{{help}}</span>
+    {% if help %}<div class="form-help">{{help|raw}}</div>{% endif %}
 </div>

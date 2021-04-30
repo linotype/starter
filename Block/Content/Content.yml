@@ -20,3 +20,9 @@ block:
       value: ''
       default: 
       preview: Lorem ipusum
+
+    readmore:
+      name: Read more button
+      desc: Collapse content and display button to expend
+      field: Switch 
+      persist: meta

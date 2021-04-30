@@ -20,7 +20,10 @@ block:
         placeholder: Image link
       default: ''
       preview: ''
-      # role: seo
+      role: # create,read,update,delete
+        admin: full
+        editor: update
+        manager: read
 
     size:
       name: Size

@@ -1,5 +1,5 @@
 <div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Title" data-controller="Title">
-    <label class="form-label" for="input-example-1">{{title}}</label>
+    {% if title %}<label class="form-label">{{title}}</label>{% endif %}
     <textarea class="linotype-field-value form-input" name="{{field.key}}" placeholder="{{ field.default ? field.default : placeholder }}" rows="{{rows}}">{{field.value}}</textarea>
-    <span class="form-help">{{help}}</span>
+    {% if help %}<div class="form-help">{{help|raw}}</div>{% endif %}
 </div>

@@ -1,8 +1,62 @@
 .field--markdown {
   display: relative;
 
-  .CodeMirror, .CodeMirror-scroll {
-    padding-bottom: 50px!important;
+  .editor-toolbar {
+    border-radius: 0;
+    z-index:100;
+    position: sticky;
+    top: 0px;
+    background: #fff;
+    border-bottom: 1px solid #dadee4;
+    border-color: #dadee4;
+    opacity: 1;
+  
+  }
+
+  .CodeMirror{
+    border-radius: 0;
+    padding: 30px;
+    border-top: none;
+    border-color: #dadee4;
+    
+    .CodeMirror-code .cm-comment {
+      background: transparent;
+      color: #c5c5c5;
+    }
+    
+    .CodeMirror-scroll {
+      padding-bottom: 50px!important;
+    
+    }
+
+  } 
+  
+  &.fullwidth {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    
+    .editor-toolbar, .CodeMirror{
+      border-left: 0;
+      border-right: 0;
+    
+    }
+    
+    .form-label,
+    .form-help {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    
+    }
+
+  }
+
+  &.remove-margin-top {
+    margin-top: -2.05rem;
+  
+  }
+
+  &.remove-margin-bottom {
+    margin-bottom: -2.05rem;
   
   }
 

@@ -12,21 +12,27 @@ template:
       module: Header
 
     title:
+      title: About page title
       block: Title
       override:
         text:
+          title: ''
           option:
             size: xl
         tag: 
           default: h1
 
     presentation:
+      # title: Content
       block: Content
       override:
         content:
+          title: ''
           field: Quill
-          title: Texte de présentation
-          default: Hello i'm a guy without name
+          option:
+            fullwidth: true
+            remove_margin_top: true
+          default: Hello This is a text about us :)
   
     footer:
       module: Footer

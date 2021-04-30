@@ -1,10 +1,13 @@
 
 $primary-color: #5755d9 !default;
+// $primary-color: #333 !default;
+// $primary-color: #999 !default;
+
 $primary-color-dark: darken($primary-color, 3%) !default;
-$primary-color-light: lighten($primary-color, 3%) !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
 $secondary-color: lighten($primary-color, 37.5%) !default;
 $secondary-color-dark: darken($secondary-color, 3%) !default;
-$secondary-color-light: lighten($secondary-color, 3%) !default;
+$secondary-color-light: lighten($secondary-color, 15%) !default;
 $bg-color: #fff;
 
 @import "node_modules/spectre.css/src/spectre";
@@ -23,23 +26,3 @@ $bg-color: #fff;
 
 //@import "_darkmode";
 
-
-.scroll-shadow-content {
-    overflow-x:hidden;
-    overflow-y:auto;
-}
-.scroll-shadow-content::-webkit-scrollbar-track
-{
-	background-color: $secondary-color;
-}
-
-.scroll-shadow-content::-webkit-scrollbar
-{
-	width: .2rem;
-	background-color: $secondary-color;
-}
-
-.scroll-shadow-content::-webkit-scrollbar-thumb
-{
-	background-color: $primary-color;
-}

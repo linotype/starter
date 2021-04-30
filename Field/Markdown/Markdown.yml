@@ -17,4 +17,7 @@ field:
 
   option:
     placeholder: Type your text here
+    fullwidth: false
+    remove_margin_top: false
+    remove_margin_bottom: false
     

@@ -6,6 +6,11 @@
     font-size: inherit;
   }
 
+  .ql-toolbar {
+    background: #fff;
+    z-index: 100;
+  }
+  
   .ql-editor {
 
     p,
@@ -35,6 +40,35 @@
       line-height: 1.42;
     }
 
+  }
+
+  &.fullwidth {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    
+    .ql-toolbar, 
+    .ql-container {
+      border-left: 0;
+      border-right: 0;
+    
+    }
+    .form-label,
+    .form-help {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    
+    }
+
+  }
+
+  &.remove-margin-top {
+    margin-top: -2.05rem;
+  
+  }
+
+  &.remove-margin-bottom {
+    margin-bottom: -2.05rem;
+  
   }
 
 }

@@ -2,12 +2,13 @@ import { Controller } from "stimulus"
 
 import 'simplemde/dist/simplemde.min.css';
 import SimpleMDE from 'simplemde';
+import stickybits from 'stickybits'
 
 export default class extends Controller {
 
   static get targets() 
   {
-    return [ "editor", "editor_container", "value" ]
+    return [ "container", "editor", "value" ]
   }
 
   static get values() 
@@ -32,7 +33,9 @@ export default class extends Controller {
 
     this.simplemde.value(this.valueTarget.value);
  
-    this.element.style.visibility = "visible";
+    this.stickybit = stickybits('.editor-toolbar', { stickyBitStickyOffset: -1 });
+    
+    this.containerTarget.style.visibility = "visible";
     
   }
 

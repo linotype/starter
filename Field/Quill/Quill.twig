@@ -1,8 +1,8 @@
-<div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Quill" data-controller="Quill">
-    <label class="form-label" for="input-example-1">{{title}}</label>
-    <div data-Quill-target="editor_container">
+<div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group{{ fullwidth ? ' fullwidth' }}{{ remove_margin_top ? ' remove-margin-top' }}{{ remove_margin_bottom ? ' remove-margin-bottom' }}" data-type="Quill" data-controller="Quill">
+    {% if title %}<label class="form-label">{{title}}</label>{% endif %}
+    <div data-Quill-target="container" style="visibility:hidden">
         <div data-Quill-target="editor">{{field.value|raw}}</div>
     </div>
     <textarea style="display:none" data-Quill-target="value" class="linotype-field-value form-input" name="{{field.key}}" placeholder="{{ field.default ? field.default : placeholder }}">{{field.value|raw}}</textarea>
-    <span class="form-help">{{help}}</span>
+    {% if help %}<div class="form-help">{{help|raw}}</div>{% endif %}
 </div>

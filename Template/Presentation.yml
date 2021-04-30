@@ -9,16 +9,14 @@ template:
   layout:
 
     slides:
-      title: Presentation contents
-      help: Create your presentation with markdown
+      # title: Presentation contents
+      # help: Create your presentation with markdown
       block: Presentation
       override:
         content:
-          desc: '<h5>Help:</h5>
-            <ul>
-              <li>Create new slide with <b>---</b></li>
-              <li>Create vertical slide with <b>--</b></li>
-            </ul>'
+          option:
+            fullwidth: true
+            remove_margin_top: true
 
     # slides2:
     #   title: Slides2

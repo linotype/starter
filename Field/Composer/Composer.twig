@@ -1,5 +1,5 @@
 <div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Composer" data-controller="Composer">
-    <label class="form-label" for="input-example-1">{{title}}</label>
+    {% if title %}<label class="form-label">{{title}}</label>{% endif %}
 
     <div data-Composer-target="items" class="composer-items" rel='drop-zone'>
         {% for key, item in linotype( 'helper', 'Composer.getFields', field.value ) %}
@@ -49,7 +49,7 @@
 
 
     <textarea data-Composer-target="value" class="linotype-field-value form-input" name="{{field.key}}" rows="20" style="display:none">{{field.value|json_encode()}}</textarea>
-    <span class="form-help">{{help}}</span>
+    {% if help %}<div class="form-help">{{help|raw}}</div>{% endif %}
 </div>
 
 {# <div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="linotype-field {{field.class}}" data-type="Composer" data-controller="Composer">

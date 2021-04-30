@@ -1,6 +1,6 @@
 <div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Json" data-controller="Json">
-    <label class="form-label">{{title}}</label>
+    {% if title %}<label class="form-label">{{title}}</label>{% endif %}
     <div data-Json-target="editor"></div>
     <textarea style="display:none" data-Json-target="value" class="linotype-field-value form-input" name="{{field.key}}" placeholder="{{placeholder}}">{{field.value|raw}}</textarea>
-    <span class="form-help">{{help}}</span>
+    {% if help %}<div class="form-help">{{help|raw}}</div>{% endif %}
 </div>

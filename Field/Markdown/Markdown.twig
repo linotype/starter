@@ -1,8 +1,8 @@
-<div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Markdown" data-controller="Markdown">
-    <label class="form-label" for="input-example-1">{{title}}</label>
-    <div data-Markdown-target="editor_container">
+<div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group {{ fullwidth ? 'fullwidth' }}{{ remove_margin_top ? ' remove-margin-top' }}{{ remove_margin_bottom ? ' remove-margin-bottom' }}" data-type="Markdown" data-controller="Markdown">
+    {% if title %}<label class="form-label">{{title}}</label>{% endif %}
+    <div data-Markdown-target="container" style="visibility:hidden">
         <textarea data-Markdown-target="editor">{{field.value|raw}}</textarea>
     </div>
     <textarea style="display:none" data-Markdown-target="value" class="linotype-field-value form-input" name="{{field.key}}" placeholder="{{ field.default ? field.default : placeholder }}">{{field.value|raw}}</textarea>
-    <span class="form-help">{{help|raw}}</span>
+    {% if help %}<div class="form-help">{{help|raw}}</div>{% endif %}
 </div>

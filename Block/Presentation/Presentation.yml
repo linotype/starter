@@ -15,7 +15,14 @@ block:
 
     content:
       name: ''
-      desc: ''
+      desc: '<h5>Help:</h5>
+            <ul>
+              <li><mark>---</mark> : Create new slide with </li>
+              <li><mark>--</mark> : Create vertical slide</li>
+              <li><mark>&lt;!-- .slide: data-background="#000000" --&gt;</mark> : Change background color</li>
+              <li><mark>&lt;!-- .element: class="fragment" data-fragment-index="1" --&gt;</mark> : Create fragment step</li>
+              <li><mark>```php [1|2-3] ```</mark>  : Create fragment step in code</li>
+            </ul>'
       field: Markdown
       persist: meta
     

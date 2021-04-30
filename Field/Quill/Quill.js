@@ -3,6 +3,7 @@ import { Controller } from "stimulus"
 import hljs from 'highlight.js';
 window.hljs = hljs;
 import Quill from 'quill';
+import stickybits from 'stickybits'
 
 import 'quill/dist/quill.snow.css';
 import 'quill/dist/quill.bubble.css';
@@ -12,7 +13,7 @@ export default class extends Controller {
 
   static get targets() 
   {
-    return [ "editor", "editor_container", "value" ]
+    return [ "container", "editor", "value" ]
   }
 
   static get values() 
@@ -96,7 +97,10 @@ export default class extends Controller {
     this.quill.on('text-change', () => {
       this.update();
     });
-    this.element.style.visibility = "visible";
+
+    this.stickybit = stickybits('.ql-toolbar', { stickyBitStickyOffset: -1 });
+
+    this.containerTarget.style.visibility = "visible";
     
   }
 
@@ -120,7 +124,7 @@ export default class extends Controller {
 
   disconnect() 
   { 
-    this.editor_containerTarget.querySelector('.ql-toolbar').remove()
+    this.containerTarget.querySelector('.ql-toolbar').remove()
     this.quill.destroy()
     this.quill = undefined
     

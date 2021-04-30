@@ -1,5 +1,5 @@
 <div data-field-id="{{field.uid}}" data-key="{{field.key}}" id="{{field.id}}" class="{{field.class}} form-group" data-type="Select" data-controller="Select">
-    <label class="form-label" for="input-example-1">{{title}}</label>
+    {% if title %}<label class="form-label">{{title}}</label>{% endif %}
     <select id="select--{{field.id}}" name="{{field.key}}" class="linotype-field-value form-select">
         {% for key, option in data %}
             {% if field.value %}
@@ -9,5 +9,5 @@
             {% endif %}
         {% endfor %}
     </select>
-    <span class="form-help">{{help}}</span>
+    {% if help %}<div class="form-help">{{help|raw}}</div>{% endif %}
 </div>
