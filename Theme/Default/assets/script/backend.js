@@ -1,5 +1,4 @@
 import { Application } from "stimulus"
-// import * as Turbo from "@hotwired/turbo"
 import { disableBodyScroll } from 'body-scroll-lock';
 
 const application = Application.start()
@@ -33,5 +32,3 @@ function identifierForContextKey(key) {
 application.load(definitionsFromContext(context))
 
 disableBodyScroll( document.querySelector('body') );
-
-// Turbo.start();
