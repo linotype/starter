@@ -1,15 +1,19 @@
 import { Controller } from "stimulus"
-import Swiper from 'swiper/bundle';
-
-import 'swiper/swiper-bundle.css';
-
 export default class extends Controller {
 
   connect() {
-    console.log("Hello, Stimulus Slider!", this.element)
-    this.swiper = new Swiper(this.element, {
-      ...this.defaultOptions
-    })
+    
+    import("swiper/swiper-bundle.css")
+
+    import("swiper/bundle").then( Swiper => {
+      this.Swiper = Swiper.default;
+
+      this.swiper = new this.Swiper(this.element, {
+        ...this.defaultOptions
+      })
+
+    });
+
   }
 
   disconnect() {

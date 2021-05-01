@@ -92,10 +92,10 @@ export default class extends Controller {
       //   return "Loading...";
       // },
       // promptURLs: true,
-      // renderingConfig: {
-      //   singleLineBreaks: false,
-      //   codeSyntaxHighlighting: true,
-      // },
+      renderingConfig: {
+        singleLineBreaks: true,
+        codeSyntaxHighlighting: true,
+      },
       // shortcuts: {
       //   drawTable: "Cmd-Alt-T"
       // },

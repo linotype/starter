@@ -1,13 +1,5 @@
 import { Controller } from "stimulus"
 
-import Reveal from 'reveal.js';
-import RevealMarkdown from 'reveal.js/plugin/markdown/markdown.js';
-import RevealHighlight from 'reveal.js/plugin/highlight/highlight.js';
-import RevealNotes from 'reveal.js/plugin/notes/notes.js';
-
-import 'reveal.js/dist/reveal.css';
-import 'reveal.js/dist/theme/white.css';
-
 export default class extends Controller {
 
   static get targets() 
@@ -17,23 +9,44 @@ export default class extends Controller {
 
   connect() {
 
-    let block = this.element;
-    let block_id = block.getAttribute("id");
-    let context = linotype[block_id];
-    
-    let controls = true;
-    if ( context.controls === "false" ) controls = false;
-    context.controls = controls;
+    import("reveal.js/dist/reveal.css");
+    import("reveal.js/dist/theme/white.css");
 
-    let deck = new Reveal( this.revealTarget, {
-      ...this.defaultOptions,
-      embedded: true,
-      keyboardCondition: 'focused',
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
-      ...context
-    })
+    import("reveal.js").then( Revealjs => {
+      this.Reveal = Revealjs.default;
+      import("reveal.js/plugin/markdown/markdown.js").then( RevealMarkdown => {
+        this.RevealMarkdown = RevealMarkdown.default;
+        import("reveal.js/plugin/highlight/highlight.js").then( RevealHighlight => {
+          this.RevealHighlight = RevealHighlight.default;
+          import("reveal.js/plugin/notes/notes.js").then( RevealNotes => {
+            this.RevealNotes = RevealNotes.default;
 
-    deck.initialize();
+            let block = this.element;
+            let block_id = block.getAttribute("id");
+            let context = linotype[block_id];
+            
+            let controls = true;
+            if ( context.controls === "false" ) controls = false;
+            context.controls = controls;
+
+            let deck = new this.Reveal( this.revealTarget, {
+              ...this.defaultOptions,
+              embedded: true,
+              keyboardCondition: 'focused',
+              plugins: [ this.RevealMarkdown, this.RevealHighlight, this.RevealNotes ],
+              ...context
+            })
+
+            deck.initialize().then( () => {
+              setTimeout( () => { 
+                this.revealTarget.style.visibility = "visible"; 
+              }, 200 );
+            });
+
+          });
+        });
+      });
+    });
 
   }
 

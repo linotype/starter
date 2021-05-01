@@ -1,5 +1,5 @@
 import { Application } from "stimulus"
-// import * as Turbo from "@hotwired/turbo"
+import * as Turbo from "@hotwired/turbo"
 
 const application = Application.start()
 const context = require.context("./../../../../Block", true, /\.js$/)
@@ -31,4 +31,4 @@ function identifierForContextKey(key) {
 
 application.load(definitionsFromContext(context))
 
-// Turbo.start();
+Turbo.start();
