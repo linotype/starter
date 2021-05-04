@@ -32,7 +32,10 @@ export default class extends Controller {
             let deck = new this.Reveal( this.revealTarget, {
               ...this.defaultOptions,
               embedded: true,
+              width: 1600,
+              height: 1200,
               keyboardCondition: 'focused',
+              navigationMode: 'linear',
               plugins: [ this.RevealMarkdown, this.RevealHighlight, this.RevealNotes ],
               ...context
             })
