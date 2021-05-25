@@ -38,7 +38,7 @@ export default class extends Controller {
     }
 
     this.options = {
-      placeholder: this.valueTarget.getAttribute('placeholder').replace(/(<([^>]+)>)/gi, ""),
+      placeholder: this.valueTarget.getAttribute('placeholder').replace(/(<([^>]+)>)/gi, "").substring(-1, 50) + '...',
       theme: data.theme,
       p: data.p,
       modules: {

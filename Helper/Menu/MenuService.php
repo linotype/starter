@@ -7,12 +7,13 @@ use Linotype\Bundle\LinotypeBundle\Repository\LinotypeMetaRepository;
 use Linotype\Bundle\LinotypeBundle\Repository\LinotypeTemplateRepository;
 use Linotype\Helper\Menu\MenuHelper;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
+use Symfony\Component\HttpFoundation\RequestStack;
 
 class MenuService extends AbstractController
 {
 
-    public function __construct( Linotype $linotype, LinotypeTemplateRepository $templateRepo, LinotypeMetaRepository $metaRepo, MenuHelper $helper ){
+    public function __construct( Linotype $linotype, LinotypeTemplateRepository $templateRepo, LinotypeMetaRepository $metaRepo, MenuHelper $helper, RequestStack $request ) {
+        $this->locale = $request->getCurrentRequest()->getLocale();
         $this->linotype = $linotype;
         $this->config = $this->linotype->getConfig();
         $this->current = $this->config->getCurrent();
@@ -30,7 +31,7 @@ class MenuService extends AbstractController
         foreach( $this->map as $menu_id => $menu_value ) {
             $menu[ $menu_id ] = [
                 'name' => $menu_value['name'],
-                'path' => $menu_value['path'],
+                'path' => ( $this->locale !== 'en' ? '/' . $this->locale : '' ) . $menu_value['path'],
             ];
         }
         return $menu;

@@ -1,7 +1,10 @@
 
 $primary-color: #5755d9 !default;
 // $primary-color: #333 !default;
-// $primary-color: #999 !default;
+// $primary-color: rgb(38, 139, 255) !default;
+// $primary-color: #406794 !default;
+// $primary-color: #000000 !default;
+
 
 $primary-color-dark: darken($primary-color, 3%) !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
@@ -24,5 +27,15 @@ $bg-color: #fff;
 
 @import "_custom";
 
-//@import "_darkmode";
+.logo * {
+    fill: $primary-color;
+}
+// .toolbar .panel, .toolbar .panel-head, .toolbar .panel-footer {
+//     background: lighten($primary-color, 33%);
+//     border-color: lighten($primary-color, 23%);
+// }
+// .toolbar .panel .menu .menu-item {
+//     color: $primary-color-light;
+// }
 
+//@import "_darkmode";

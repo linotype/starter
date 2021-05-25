@@ -59,7 +59,7 @@
 .scroll-shadow-top-radial {
     top: 0;
     left: 0;
-    Background: radial-gradient(farthest-side at 50% 0%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)) 100% 0;
+    background: radial-gradient(farthest-side at 50% 0%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)) 100% 0;
     background-repeat: no-repeat;
     background-size: 110% 5px;
     width: inherit;
@@ -69,7 +69,7 @@
 .scroll-shadow-bottom-radial {
     bottom: 0;
     left: 0;
-    Background: radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)) 0 100%;
+    background: radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)) 0 100%;
     background-repeat: no-repeat;
     background-size: 110% 5px;
     width: inherit;

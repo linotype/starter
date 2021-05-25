@@ -7,48 +7,39 @@ export default class extends Controller {
     return [ "reveal" ]
   }
 
-  connect() {
+  async connect() {
 
     import("reveal.js/dist/reveal.css");
     import("reveal.js/dist/theme/white.css");
+    
+    const Revealjs = (await import('reveal.js')).default
+    const RevealMarkdown = (await import('reveal.js/plugin/markdown/markdown.js')).default
+    const RevealHighlight = (await import('reveal.js/plugin/highlight/highlight.js')).default
+    const RevealNotes = (await import('reveal.js/plugin/notes/notes.js')).default
 
-    import("reveal.js").then( Revealjs => {
-      this.Reveal = Revealjs.default;
-      import("reveal.js/plugin/markdown/markdown.js").then( RevealMarkdown => {
-        this.RevealMarkdown = RevealMarkdown.default;
-        import("reveal.js/plugin/highlight/highlight.js").then( RevealHighlight => {
-          this.RevealHighlight = RevealHighlight.default;
-          import("reveal.js/plugin/notes/notes.js").then( RevealNotes => {
-            this.RevealNotes = RevealNotes.default;
+    let block = this.element;
+    let block_id = block.getAttribute("id");
+    let context = linotype[block_id];
+    
+    let controls = true;
+    if ( context.controls === "false" ) controls = false;
+    context.controls = controls;
 
-            let block = this.element;
-            let block_id = block.getAttribute("id");
-            let context = linotype[block_id];
-            
-            let controls = true;
-            if ( context.controls === "false" ) controls = false;
-            context.controls = controls;
+    let deck = new Revealjs( this.revealTarget, {
+      ...this.defaultOptions,
+      embedded: true,
+      width: 1600,
+      height: 1200,
+      keyboardCondition: 'focused',
+      navigationMode: 'linear',
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+      ...context
+    })
 
-            let deck = new this.Reveal( this.revealTarget, {
-              ...this.defaultOptions,
-              embedded: true,
-              width: 1600,
-              height: 1200,
-              keyboardCondition: 'focused',
-              navigationMode: 'linear',
-              plugins: [ this.RevealMarkdown, this.RevealHighlight, this.RevealNotes ],
-              ...context
-            })
-
-            deck.initialize().then( () => {
-              setTimeout( () => { 
-                this.revealTarget.style.visibility = "visible"; 
-              }, 200 );
-            });
-
-          });
-        });
-      });
+    deck.initialize().then( () => {
+      setTimeout( () => { 
+        this.revealTarget.style.visibility = "visible"; 
+      }, 200 );
     });
 
   }

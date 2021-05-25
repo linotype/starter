@@ -12,7 +12,7 @@ template:
       module: Header
 
     title:
-      title: About page title
+      title: Title
       block: Title
       override:
         text:
@@ -23,15 +23,15 @@ template:
           default: h1
 
     presentation:
-      # title: Content
+      title: Content
       block: Content
       override:
         content:
           title: ''
           field: Quill
           option:
-            fullwidth: true
-            remove_margin_top: true
+            fullwidth: false
+            remove_margin_top: false
           default: Hello This is a text about us :)
   
     footer:
